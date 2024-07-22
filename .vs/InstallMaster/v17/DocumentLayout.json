@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\W10User\\Documents\\VisualStudio2022\\Projects\\InstallMaster\\",
+  "WorkspaceRootPath": "D:\\W10User\\Documents\\OnlineRepositories\\InstallMaster\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BFD11F3A-036C-4BD2-8EC5-A04014B219D8}|InstallMasterLib\\InstallMasterLib.csproj|d:\\w10user\\documents\\visualstudio2022\\projects\\installmaster\\installmasterlib\\wmiquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BFD11F3A-036C-4BD2-8EC5-A04014B219D8}|InstallMasterLib\\InstallMasterLib.csproj|d:\\w10user\\documents\\onlinerepositories\\installmaster\\installmasterlib\\wmiquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BFD11F3A-036C-4BD2-8EC5-A04014B219D8}|InstallMasterLib\\InstallMasterLib.csproj|solutionrelative:installmasterlib\\wmiquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -14,17 +14,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "WMIQuery.cs",
-              "DocumentMoniker": "D:\\W10User\\Documents\\VisualStudio2022\\Projects\\InstallMaster\\InstallMasterLib\\WMIQuery.cs",
+              "DocumentMoniker": "D:\\W10User\\Documents\\OnlineRepositories\\InstallMaster\\InstallMasterLib\\WMIQuery.cs",
               "RelativeDocumentMoniker": "InstallMasterLib\\WMIQuery.cs",
-              "ToolTip": "D:\\W10User\\Documents\\VisualStudio2022\\Projects\\InstallMaster\\InstallMasterLib\\WMIQuery.cs",
+              "ToolTip": "D:\\W10User\\Documents\\OnlineRepositories\\InstallMaster\\InstallMasterLib\\WMIQuery.cs",
               "RelativeToolTip": "InstallMasterLib\\WMIQuery.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAALAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-22T05:42:40.731Z",
               "EditorCaption": ""
