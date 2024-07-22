@@ -1,0 +1,6 @@
+D:\W10User\Documents\OnlineRepositories\InstallMaster\InstallMasterLib\bin\Debug\InstallMasterLib.dll
+D:\W10User\Documents\OnlineRepositories\InstallMaster\InstallMasterLib\bin\Debug\InstallMasterLib.pdb
+D:\W10User\Documents\OnlineRepositories\InstallMaster\InstallMasterLib\obj\Debug\InstallMasterLib.csproj.AssemblyReference.cache
+D:\W10User\Documents\OnlineRepositories\InstallMaster\InstallMasterLib\obj\Debug\InstallMasterLib.csproj.CoreCompileInputs.cache
+D:\W10User\Documents\OnlineRepositories\InstallMaster\InstallMasterLib\obj\Debug\InstallMasterLib.dll
+D:\W10User\Documents\OnlineRepositories\InstallMaster\InstallMasterLib\obj\Debug\InstallMasterLib.pdb

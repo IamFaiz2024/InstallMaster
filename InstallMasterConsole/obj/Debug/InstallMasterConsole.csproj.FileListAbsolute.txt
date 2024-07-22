@@ -1,0 +1,10 @@
+D:\W10User\Documents\OnlineRepositories\InstallMaster\InstallMasterConsole\bin\Debug\InstallMasterConsole.exe.config
+D:\W10User\Documents\OnlineRepositories\InstallMaster\InstallMasterConsole\bin\Debug\InstallMasterConsole.exe
+D:\W10User\Documents\OnlineRepositories\InstallMaster\InstallMasterConsole\bin\Debug\InstallMasterConsole.pdb
+D:\W10User\Documents\OnlineRepositories\InstallMaster\InstallMasterConsole\bin\Debug\InstallMasterLib.dll
+D:\W10User\Documents\OnlineRepositories\InstallMaster\InstallMasterConsole\bin\Debug\InstallMasterLib.pdb
+D:\W10User\Documents\OnlineRepositories\InstallMaster\InstallMasterConsole\obj\Debug\InstallMasterConsole.csproj.AssemblyReference.cache
+D:\W10User\Documents\OnlineRepositories\InstallMaster\InstallMasterConsole\obj\Debug\InstallMasterConsole.csproj.CoreCompileInputs.cache
+D:\W10User\Documents\OnlineRepositories\InstallMaster\InstallMasterConsole\obj\Debug\InstallM.45585CC0.Up2Date
+D:\W10User\Documents\OnlineRepositories\InstallMaster\InstallMasterConsole\obj\Debug\InstallMasterConsole.exe
+D:\W10User\Documents\OnlineRepositories\InstallMaster\InstallMasterConsole\obj\Debug\InstallMasterConsole.pdb
