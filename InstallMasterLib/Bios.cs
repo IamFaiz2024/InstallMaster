@@ -30,5 +30,22 @@ namespace InstallMasterLib
 			}
 			return biosbiosDetail;
 		}
-	}
+
+        public Dictionary<string, object> GetBios(string[] filterItem)
+		{
+            string filterItemString = string.Join(", ", filterItem);
+            string biosquery = $"SELECT {filterItem} FROM Win32_BIOS";
+            var biosresults = _wmiQuery.ExecuteWMIQuery(biosquery);
+            var biosSR = new Dictionary<string, object>();
+            foreach (var item in biosresults)
+            {
+                foreach (var property in item.Properties)
+                {
+                    biosSR[property.Name] = property.Value;
+                }
+            }
+            return biosSR;
+        }
+
+    }
 }

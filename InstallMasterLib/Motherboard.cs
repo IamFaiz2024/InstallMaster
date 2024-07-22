@@ -22,27 +22,70 @@ namespace InstallMasterLib
 
 		public Dictionary<string, object> GetMotherboardDetails()
 		{
-			# region Getting Result for MotherBoard
-			string mbquery = "SELECT * FROM Win32_BaseBoard";
+            #region Get mbDetails for MotherBoard
+            string mbquery = "SELECT Manufacturer,Model,PartNumber,Product,SerialNumber FROM Win32_BaseBoard";
 			var mbresults = _wmiQuery.ExecuteWMIQuery(mbquery);
-			var motherboardDetails = new Dictionary<string, object>();
+			var mbDetails = new Dictionary<string, object>();
 			foreach (var item in mbresults)
 			{
 				foreach (var property in item.Properties)
 				{
-					motherboardDetails[property.Name] = property.Value;
+					mbDetails[property.Name] = property.Value;
 				}
 			}
-			#endregion
+            #endregion
+            #region GetbiosSR from Bios.cs
+            /*
+            var _bios = new Bios();
+            string[] biosSrProp = { "SMBIOSBIOSVersion" };
+            var biosSR = _bios.GetBios(biosSrProp);
+            */
+            #region if searching for SMBIOSBIOSVersion here
+            /*
+            var _biosdetails = _bios.GetBIOSDetails();
+			Dictionary<string, object> biosSR = _biosdetails
+            .Where(entry => entry.Key == "SMBIOSBIOSVersion")
+            .ToDictionary(entry => entry.Key, entry => entry.Value);
+			*/
+            #endregion
+            #endregion
 
-			var _bios = new Bios();
-			var _biosdetails = _bios.GetBIOSDetails();
-			Dictionary<string, object> _biosSR = _biosdetails.Where(kvp => kvp.Key == "SMBIOSBIOSVersion")
-											  .ToDictionary(kvp => kvp.Key, kvp => kvp.Value);
+            //combine MotherBoard and Bios SR Number
+            var motherboardDetail = CombineWithBiosDetails(mbDetails);
 
-			var mergedDetails = motherboardDetails.Concat(_biosSR).ToDictionary(pair => pair.Key, pair => pair.Value);
+            //return mbDetails;
+            return motherboardDetail;
+        }
 
-			return motherboardDetails;
-		}				
-	}
+        public Dictionary<string, object> GetMotherboardDetails(string[] filterItem)
+        {
+            string filterItemString = string.Join(", ", filterItem);
+            string mbquery = $"SELECT {filterItem} FROM Win32_BIOS";
+            var mbresults = _wmiQuery.ExecuteWMIQuery(mbquery);
+            var mbDetails = new Dictionary<string, object>();
+            foreach (var item in mbresults)
+            {
+                foreach (var property in item.Properties)
+                {
+                    mbDetails[property.Name] = property.Value;
+                }
+            }
+
+            //combine MotherBoard and Bios SR Number
+            var motherboardDetail = CombineWithBiosDetails(mbDetails);
+
+            //return mbDetails;
+            return motherboardDetail;            
+        }
+
+        private Dictionary<string, object> CombineWithBiosDetails(Dictionary<string, object> mbDetails)
+        {
+            var _bios = new Bios();
+            string[] biosSrProp = { "SMBIOSBIOSVersion" };
+            var biosSR = _bios.GetBios(biosSrProp);
+            var motherboardDetail = mbDetails.Concat(biosSR).ToDictionary(pair => pair.Key, pair => pair.Value);
+
+            return motherboardDetail;
+        }
+    }
 }
