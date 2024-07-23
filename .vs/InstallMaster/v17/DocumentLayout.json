@@ -1,7 +1,20 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\W10User\\Documents\\OnlineRepositories\\InstallMaster\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{ED7CE0D7-1FE8-48AF-9D8C-9CB626B976B5}|InstallMasterConsole\\InstallMasterConsole.csproj|d:\\w10user\\documents\\onlinerepositories\\installmaster\\installmasterconsole\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED7CE0D7-1FE8-48AF-9D8C-9CB626B976B5}|InstallMasterConsole\\InstallMasterConsole.csproj|solutionrelative:installmasterconsole\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFD11F3A-036C-4BD2-8EC5-A04014B219D8}|InstallMasterLib\\InstallMasterLib.csproj|d:\\w10user\\documents\\onlinerepositories\\installmaster\\installmasterlib\\helperfunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFD11F3A-036C-4BD2-8EC5-A04014B219D8}|InstallMasterLib\\InstallMasterLib.csproj|solutionrelative:installmasterlib\\helperfunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFD11F3A-036C-4BD2-8EC5-A04014B219D8}|InstallMasterLib\\InstallMasterLib.csproj|d:\\w10user\\documents\\onlinerepositories\\installmaster\\installmasterlib\\motherboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFD11F3A-036C-4BD2-8EC5-A04014B219D8}|InstallMasterLib\\InstallMasterLib.csproj|solutionrelative:installmasterlib\\motherboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +22,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HelperFunctions.cs",
+              "DocumentMoniker": "D:\\W10User\\Documents\\OnlineRepositories\\InstallMaster\\InstallMasterLib\\HelperFunctions.cs",
+              "RelativeDocumentMoniker": "InstallMasterLib\\HelperFunctions.cs",
+              "ToolTip": "D:\\W10User\\Documents\\OnlineRepositories\\InstallMaster\\InstallMasterLib\\HelperFunctions.cs",
+              "RelativeToolTip": "InstallMasterLib\\HelperFunctions.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T09:37:31.471Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\W10User\\Documents\\OnlineRepositories\\InstallMaster\\InstallMasterConsole\\Program.cs",
+              "RelativeDocumentMoniker": "InstallMasterConsole\\Program.cs",
+              "ToolTip": "D:\\W10User\\Documents\\OnlineRepositories\\InstallMaster\\InstallMasterConsole\\Program.cs",
+              "RelativeToolTip": "InstallMasterConsole\\Program.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAiwBQAAABlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T08:38:49.68Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Motherboard.cs",
+              "DocumentMoniker": "D:\\W10User\\Documents\\OnlineRepositories\\InstallMaster\\InstallMasterLib\\Motherboard.cs",
+              "RelativeDocumentMoniker": "InstallMasterLib\\Motherboard.cs",
+              "ToolTip": "D:\\W10User\\Documents\\OnlineRepositories\\InstallMaster\\InstallMasterLib\\Motherboard.cs",
+              "RelativeToolTip": "InstallMasterLib\\Motherboard.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAowCwAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T06:50:55.784Z",
+              "EditorCaption": ""
             }
           ]
         }

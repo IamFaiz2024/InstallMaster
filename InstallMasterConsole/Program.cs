@@ -16,12 +16,9 @@ namespace InstallMasterConsole
 			// Test the Motherboard class
 			var motherboard = new Motherboard();
             string[] mbProps = { "Manufacturer", "Model", "PartNumber", "Product", "SerialNumber" };
-            var motherboardDetails = motherboard.GetMotherboardDetails();
-			foreach (var detail in motherboardDetails)
-			{
-				Console.WriteLine($"{detail.Key}: {detail.Value}");
-			}
-
+            var motherboardDetails = motherboard.GetMotherboardDetails(mbProps);
+			var newMBBDetails = HelperFunctions.PrefixDictionaryKeys(motherboardDetails, "MotherBoard_");
+			foreach (var mbbdetail in newMBBDetails){Console.WriteLine($"{mbbdetail.Key}: {mbbdetail.Value}");}
 			Console.ReadLine();
 		}
 	}	

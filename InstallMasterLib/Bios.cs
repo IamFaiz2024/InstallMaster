@@ -23,26 +23,20 @@ namespace InstallMasterLib
 			var biosbiosDetail = new Dictionary<string, object>();
 			foreach (var item in biosresults)
 			{
-				foreach (var property in item.Properties)
-				{
-					biosbiosDetail[property.Name] = property.Value;
-				}
+				foreach (var property in item.Properties){biosbiosDetail[property.Name] = property.Value;}
 			}
 			return biosbiosDetail;
 		}
 
-        public Dictionary<string, object> GetBios(string[] filterItem)
+        public Dictionary<string, object> GetBiosSR(string[] filterItem)
 		{
             string filterItemString = string.Join(", ", filterItem);
-            string biosquery = $"SELECT {filterItem} FROM Win32_BIOS";
+            string biosquery = $"SELECT {filterItemString} FROM Win32_BIOS";
             var biosresults = _wmiQuery.ExecuteWMIQuery(biosquery);
             var biosSR = new Dictionary<string, object>();
-            foreach (var item in biosresults)
+            foreach (var biositem in biosresults)
             {
-                foreach (var property in item.Properties)
-                {
-                    biosSR[property.Name] = property.Value;
-                }
+                foreach (var property in biositem.Properties){biosSR[property.Name] = property.Value;}
             }
             return biosSR;
         }
