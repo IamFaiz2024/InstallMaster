@@ -10,51 +10,30 @@ using System.Threading.Tasks;
 namespace InstallMasterLib
 {
 	public class Motherboard
-	{
-		private WMIQuery _wmiQuery;
-		private Bios _Bios;
+	{		
 
-		public Motherboard()
+		public SortedDictionary<string, object> GetNewMBProps()
 		{
-			_wmiQuery = new WMIQuery();
-			_Bios = new Bios();			
+			#region Getting "Manufacturer", "Model", "PartNumber", "Product", "SerialNumber" Property from Win32_BaseBoard Class
+			string[] ArrayMbProps = { "Manufacturer", "Model", "PartNumber", "Product", "SerialNumber" };
+			var Tmp1MbDetails = HelperFunctions.GetWmiClassDetails("Win32_BaseBoard", ArrayMbProps);
+			#endregion
+
+			# region Getting "SMBIOSBIOSVersion" from Win32_BIOS Class
+			string[] ArrayBiosSrNo = { "SMBIOSBIOSVersion" };
+			var TmpBiosSrNo = HelperFunctions.GetWmiClassDetails("Win32_BIOS", ArrayBiosSrNo);
+			#endregion
+
+			//Replacing Key "SMBIOSBIOSVersion" to "BiosVersion"
+			var BiosSrNo = HelperFunctions.ReplaceDictKey(TmpBiosSrNo, "SMBIOSBIOSVersion", "BiosVersion");
+
+			//Combining Dictionary BiosSrNo and Tmp1MbDetails(Motherboard Details)
+			var Tmp2MbDetails = HelperFunctions.DictCombiner(Tmp1MbDetails, BiosSrNo);
+
+			//Adding Prefix MotherBoard_ to each Property
+			var MotherboardProperties = HelperFunctions.PrefixSortedDictionaryKeys(Tmp2MbDetails, "MotherBoard_");
+
+			return MotherboardProperties;
 		}
-
-		public Dictionary<string, object> GetMotherboardDetails()
-		{
-            #region Get mbDetails for MotherBoard
-            string mbquery = "SELECT * FROM Win32_BaseBoard";
-			var mbresults = _wmiQuery.ExecuteWMIQuery(mbquery);
-			var mbDetails = new Dictionary<string, object>();
-			foreach (var item in mbresults)
-			{
-				foreach (var property in item.Properties){mbDetails[property.Name] = property.Value;}
-			}
-            #endregion     
-            //return mbDetails;
-            return mbDetails;
-        }
-
-        public Dictionary<string, object> GetMotherboardDetails(string[] filterItem)
-		{
-            string filterItemString = string.Join(",", filterItem);
-			string mbquery = $"SELECT {filterItemString} FROM Win32_BaseBoard";
-			Debug.WriteLine(mbquery);
-            var mbresults = _wmiQuery.ExecuteWMIQuery(mbquery);
-            var mbDetails = new Dictionary<string, object>();
-            foreach (var mbbitem in mbresults)
-            {
-                foreach (var property in mbbitem.Properties){mbDetails[property.Name] = property.Value;}
-            }
-
-			string[] biosSrProp = { "SMBIOSBIOSVersion" };
-			var biosSR = _Bios.GetBiosSR(biosSrProp);
-
-			//combine MotherBoard and Bios SR Number
-			var motherboardDetail = HelperFunctions.DictCombiner(mbDetails, biosSR);
-
-            //return mbDetails;
-            return motherboardDetail;            
-        }        
     }
 }

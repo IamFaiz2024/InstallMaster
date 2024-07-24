@@ -42,7 +42,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Bios.cs" />
     <Compile Include="HelperFunctions.cs" />
     <Compile Include="Motherboard.cs" />
     <Compile Include="WMIQuery.cs" />

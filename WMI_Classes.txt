@@ -4,36 +4,15 @@ CLASS    : Win32_BaseBoard
 =====================================
 
 
-Status                  : OK
-Name                    : Base Board
-PoweredOn               : True
-Caption                 : Base Board
-ConfigOptions           : 
 CreationClassName       : Win32_BaseBoard
-Depth                   : 
-Description             : Base Board
-Height                  : 
-HostingBoard            : True
-HotSwappable            : False
-InstallDate             : 
 Manufacturer            : HP
 Model                   : 
-OtherIdentifyingInfo    : 
 PartNumber              : 
 Product                 : 869D
-Removable               : False
-Replaceable             : False
-RequirementsDescription : 
-RequiresDaughterBoard   : False
 SerialNumber            : PJPMV018JEH48L
 SKU                     : 
-SlotLayout              : 
-SpecialRequirements     : 
 Tag                     : Base Board
 Version                 : KBC Version 02.3C.00
-Weight                  : 
-Width                   : 
-
 
 =====================================
 COMPUTER : 5CD04794WV 

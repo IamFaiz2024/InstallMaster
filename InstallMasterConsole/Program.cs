@@ -15,10 +15,10 @@ namespace InstallMasterConsole
 		{
 			// Test the Motherboard class
 			var motherboard = new Motherboard();
-            string[] mbProps = { "Manufacturer", "Model", "PartNumber", "Product", "SerialNumber" };
-            var motherboardDetails = motherboard.GetMotherboardDetails(mbProps);
-			var newMBBDetails = HelperFunctions.PrefixDictionaryKeys(motherboardDetails, "MotherBoard_");
-			foreach (var mbbdetail in newMBBDetails){Console.WriteLine($"{mbbdetail.Key}: {mbbdetail.Value}");}
+            //string[] mbProps = { "Manufacturer", "Model", "PartNumber", "Product", "SerialNumber" };
+            var motherboardDetails = motherboard.GetNewMBProps();
+			//var newMBBDetails = HelperFunctions.PrefixSortedDictionaryKeys(motherboardDetails, "MotherBoard_");
+			foreach (var mbbdetail in motherboardDetails) {Console.WriteLine($"{mbbdetail.Key}: {mbbdetail.Value}");}
 			Console.ReadLine();
 		}
 	}	
