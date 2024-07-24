@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Computer.cs" />
     <Compile Include="HelperFunctions.cs" />
     <Compile Include="Motherboard.cs" />
     <Compile Include="WMIQuery.cs" />

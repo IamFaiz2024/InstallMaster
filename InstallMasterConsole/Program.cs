@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
+using System.Runtime.Remoting.Channels;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -14,10 +15,9 @@ namespace InstallMasterConsole
 		static void Main(string[] args)
 		{
 			// Test the Motherboard class
-			var motherboard = new Motherboard();
-            //string[] mbProps = { "Manufacturer", "Model", "PartNumber", "Product", "SerialNumber" };
-            var motherboardDetails = motherboard.GetNewMBProps();
-			//var newMBBDetails = HelperFunctions.PrefixSortedDictionaryKeys(motherboardDetails, "MotherBoard_");
+			var motherboard = new Motherboard();            
+            var motherboardDetails = motherboard.GetMBProps();
+			Console.WriteLine("***MotherBoard Details***\n");
 			foreach (var mbbdetail in motherboardDetails) {Console.WriteLine($"{mbbdetail.Key}: {mbbdetail.Value}");}
 			Console.ReadLine();
 		}
