@@ -14,12 +14,23 @@ namespace InstallMasterConsole
 	{
 		static void Main(string[] args)
 		{
-			// Test the Motherboard class
+            #region Test the Motherboard class
+            /*
 			var motherboard = new Motherboard();            
             var motherboardDetails = motherboard.GetMBProps();
 			Console.WriteLine("***MotherBoard Details***\n");
-			foreach (var mbbdetail in motherboardDetails) {Console.WriteLine($"{mbbdetail.Key}: {mbbdetail.Value}");}
-			Console.ReadLine();
+			foreach (var compdetail in motherboardDetails) {Console.WriteLine($"{compdetail.Key}: {compdetail.Value}");}
+            */
+            #endregion
+
+            #region Test the Computer class
+            var computer = new Computer();
+            var computerDetails = computer.GetCompProps();
+            Console.WriteLine("***Computer Details***\n");
+            foreach (var compdetail in computerDetails) { Console.WriteLine($"{compdetail.Key}: {compdetail.Value}"); }
+            #endregion
+
+            Console.ReadLine();
 		}
 	}	
 }

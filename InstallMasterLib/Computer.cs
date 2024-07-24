@@ -10,29 +10,17 @@ namespace InstallMasterLib
 	{
 		public SortedDictionary<string, object> GetCompProps()
 		{
-			#region Getting "Manufacturer", "Model", "PartNumber", "Product", "SerialNumber" Property from CIM_ComputerSystem Class
-			string[] ArrayMbProps = { "Name", "Caption", "Manufacturer", "Model", "SystemSKUNumber", "SystemType" };
-			var Tmp1CompDetails = HelperFunctions.GetWmiClassDetails("CIM_ComputerSystem", ArrayMbProps);
+            #region Getting  "Name", "Caption", "Manufacturer", "Model", "SystemSKUNumber", "SystemType" Property from CIM_ComputerSystem Class
+            string[] ArrayCompProps = { "Name", "Caption", "Manufacturer", "Model", "SystemSKUNumber", "SystemType" };            
+            var Tmp1CompDetails = HelperFunctions.GetWmiClassDetails("Win32_ComputerSystem", ArrayCompProps);
 			#endregion
-
-			/*
-			#region Getting "SMBIOSBIOSVersion" from Win32_BIOS Class
-			string[] ArrayBiosSrNo = { "SMBIOSBIOSVersion" };
-			var TmpBiosSrNo = HelperFunctions.GetWmiClassDetails("Win32_BIOS", ArrayBiosSrNo);
-			#endregion
-
-			//Replacing Key "SMBIOSBIOSVersion" to "BiosVersion"
-			var BiosSrNo = HelperFunctions.ReplaceDictKey(TmpBiosSrNo, "SMBIOSBIOSVersion", "BiosVersion");
-
-			//Combining Dictionary BiosSrNo and Tmp1MbDetails(Motherboard Details)
-			var Tmp2MbDetails = HelperFunctions.DictCombiner(Tmp1MbDetails, BiosSrNo);
-			*/
-
-			//Adding Prefix MotherBoard_ to each Property
-			var MotherboardProperties = HelperFunctions.PrefixSortedDictionaryKeys(Tmp1CompDetails, "MotherBoard_");
 			
 
-			return MotherboardProperties;
+			
+			var ComputerProperties = HelperFunctions.PrefixSortedDictionaryKeys(Tmp1CompDetails, "Computer_");
+			
+
+			return ComputerProperties;
 		}
 	}
 }
