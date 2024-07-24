@@ -1,0 +1,547 @@
+=====================================
+COMPUTER : 5CD04794WV 
+CLASS    : Win32_BaseBoard 
+=====================================
+
+
+Status                  : OK
+Name                    : Base Board
+PoweredOn               : True
+Caption                 : Base Board
+ConfigOptions           : 
+CreationClassName       : Win32_BaseBoard
+Depth                   : 
+Description             : Base Board
+Height                  : 
+HostingBoard            : True
+HotSwappable            : False
+InstallDate             : 
+Manufacturer            : HP
+Model                   : 
+OtherIdentifyingInfo    : 
+PartNumber              : 
+Product                 : 869D
+Removable               : False
+Replaceable             : False
+RequirementsDescription : 
+RequiresDaughterBoard   : False
+SerialNumber            : PJPMV018JEH48L
+SKU                     : 
+SlotLayout              : 
+SpecialRequirements     : 
+Tag                     : Base Board
+Version                 : KBC Version 02.3C.00
+Weight                  : 
+Width                   : 
+
+
+=====================================
+COMPUTER : 5CD04794WV 
+CLASS    : Win32_BIOS 
+=====================================
+
+
+Status                         : OK
+Name                           : S71 Ver. 01.21.00
+Caption                        : S71 Ver. 01.21.00
+SMBIOSPresent                  : True
+BiosCharacteristics            : {7, 8, 11, 12...}
+BIOSVersion                    : {HPQOEM - 0, S71 Ver. 01.21.00, HP - 11500}
+BuildNumber                    : 
+CodeSet                        : 
+CurrentLanguage                : enUS
+Description                    : S71 Ver. 01.21.00
+EmbeddedControllerMajorVersion : 2
+EmbeddedControllerMinorVersion : 60
+IdentificationCode             : 
+InstallableLanguages           : 15
+InstallDate                    : 
+LanguageEdition                : 
+ListOfLanguages                : {enUS, deDE, esES, itIT...}
+Manufacturer                   : HP
+OtherTargetOS                  : 
+PrimaryBIOS                    : True
+ReleaseDate                    : 20240412000000.000000+000
+SerialNumber                   : 5CD04794WV
+SMBIOSBIOSVersion              : S71 Ver. 01.21.00
+SMBIOSMajorVersion             : 3
+SMBIOSMinorVersion             : 2
+SoftwareElementID              : S71 Ver. 01.21.00
+SoftwareElementState           : 3
+SystemBiosMajorVersion         : 21
+SystemBiosMinorVersion         : 0
+TargetOperatingSystem          : 0
+Version                        : HPQOEM - 0
+
+
+=====================================
+COMPUTER : 5CD04794WV 
+CLASS    : CIM_ComputerSystem 
+=====================================
+
+
+AdminPasswordStatus         : 0
+BootupState                 : Normal boot
+ChassisBootupState          : 3
+KeyboardPasswordStatus      : 0
+PowerOnPasswordStatus       : 0
+PowerSupplyState            : 3
+PowerState                  : 0
+FrontPanelResetStatus       : 0
+ThermalState                : 3
+Status                      : OK
+Name                        : 5CD04794WV
+PowerManagementCapabilities : 
+PowerManagementSupported    : 
+AutomaticManagedPagefile    : True
+AutomaticResetBootOption    : True
+AutomaticResetCapability    : True
+BootOptionOnLimit           : 
+BootOptionOnWatchDog        : 
+BootROMSupported            : True
+BootStatus                  : {0, 0, 0, 11...}
+Caption                     : 5CD04794WV
+ChassisSKUNumber            : 
+CreationClassName           : Win32_ComputerSystem
+CurrentTimeZone             : 240
+DaylightInEffect            : 
+Description                 : AT/AT COMPATIBLE
+DNSHostName                 : 5CD04794WV
+Domain                      : WORKGROUP
+DomainRole                  : 0
+EnableDaylightSavingsTime   : True
+HypervisorPresent           : True
+InfraredSupported           : False
+InitialLoadInfo             : 
+InstallDate                 : 
+LastLoadInfo                : 
+Manufacturer                : HP
+Model                       : HP ProBook 440 G7
+NameFormat                  : 
+NetworkServerModeEnabled    : True
+NumberOfLogicalProcessors   : 8
+NumberOfProcessors          : 1
+OEMLogoBitmap               : 
+OEMStringArray              : {FBYTE#3Y6E6J6S6a7J7M7Q7W7d7m7sawbUbhcAfPk8m6.H4;, BUILDID#19WWR4CD302#SBH5#DBH5;, 
+                              EDK2_1, Buff=2...}
+PartOfDomain                : False
+PauseAfterReset             : -1
+PCSystemType                : 2
+PCSystemTypeEx              : 2
+PrimaryOwnerContact         : 
+PrimaryOwnerName            : User
+ResetCapability             : 1
+ResetCount                  : -1
+ResetLimit                  : -1
+Roles                       : {LM_Workstation, LM_Server, NT}
+SupportContactDescription   : 
+SystemFamily                : 103C_5336AN HP ProBook
+SystemSKUNumber             : 8MH31EA#BH5
+SystemStartupDelay          : 
+SystemStartupOptions        : 
+SystemStartupSetting        : 
+SystemType                  : x64-based PC
+TotalPhysicalMemory         : 17009516544
+UserName                    : 5CD04794WV\W10User
+WakeUpType                  : 6
+Workgroup                   : WORKGROUP
+
+
+
+=====================================
+COMPUTER : 5CD04794WV 
+CLASS    : CIM_Processor 
+=====================================
+
+
+Availability                            : 3
+CpuStatus                               : 1
+CurrentVoltage                          : 7
+DeviceID                                : CPU0
+ErrorCleared                            : 
+ErrorDescription                        : 
+LastErrorCode                           : 
+LoadPercentage                          : 11
+Status                                  : OK
+StatusInfo                              : 3
+AddressWidth                            : 64
+DataWidth                               : 64
+ExtClock                                : 100
+L2CacheSize                             : 1024
+L2CacheSpeed                            : 
+MaxClockSpeed                           : 2304
+PowerManagementSupported                : False
+ProcessorType                           : 3
+Revision                                : 
+SocketDesignation                       : U3E1
+Version                                 : 
+VoltageCaps                             : 
+Architecture                            : 9
+AssetTag                                : To Be Filled By O.E.M.
+Caption                                 : Intel64 Family 6 Model 142 Stepping 12
+Characteristics                         : 252
+ConfigManagerErrorCode                  : 
+ConfigManagerUserConfig                 : 
+CreationClassName                       : Win32_Processor
+CurrentClockSpeed                       : 1803
+Description                             : Intel64 Family 6 Model 142 Stepping 12
+Family                                  : 198
+InstallDate                             : 
+L3CacheSize                             : 8192
+L3CacheSpeed                            : 0
+Level                                   : 6
+Manufacturer                            : GenuineIntel
+Name                                    : Intel(R) Core(TM) i7-10510U CPU @ 1.80GHz
+NumberOfCores                           : 4
+NumberOfEnabledCore                     : 4
+NumberOfLogicalProcessors               : 8
+OtherFamilyDescription                  : 
+PartNumber                              : To Be Filled By O.E.M.
+PNPDeviceID                             : 
+PowerManagementCapabilities             : 
+ProcessorId                             : BFEBFBFF000806EC
+Role                                    : CPU
+SecondLevelAddressTranslationExtensions : False
+SerialNumber                            : To Be Filled By O.E.M.
+Stepping                                : 
+SystemCreationClassName                 : Win32_ComputerSystem
+SystemName                              : 5CD04794WV
+ThreadCount                             : 8
+UniqueId                                : 
+UpgradeMethod                           : 60
+VirtualizationFirmwareEnabled           : False
+VMMonitorModeExtensions                 : False
+
+
+
+=====================================
+COMPUTER : 5CD04794WV 
+CLASS    : Win32_PhysicalMemory 
+=====================================
+
+
+Attributes           : 1
+BankLabel            : ChannelA
+Capacity             : 8589934592
+Caption              : Physical Memory
+ConfiguredClockSpeed : 2667
+ConfiguredVoltage    : 1200
+CreationClassName    : Win32_PhysicalMemory
+DataWidth            : 64
+Description          : Physical Memory
+DeviceLocator        : Bottom-Slot 1(left)
+FormFactor           : 12
+HotSwappable         : 
+InstallDate          : 
+InterleaveDataDepth  : 0
+InterleavePosition   : 0
+Manufacturer         : Ramaxel
+MaxVoltage           : 0
+MemoryType           : 0
+MinVoltage           : 0
+Model                : 
+Name                 : Physical Memory
+OtherIdentifyingInfo : 
+PartNumber           : RMSA3260ME78HAF-2666
+PositionInRow        : 1
+PoweredOn            : 
+Removable            : 
+Replaceable          : 
+SerialNumber         : 132BABB0
+SKU                  : 
+SMBIOSMemoryType     : 26
+Speed                : 2667
+Status               : 
+Tag                  : Physical Memory 0
+TotalWidth           : 64
+TypeDetail           : 128
+Version              : 
+
+Attributes           : 1
+BankLabel            : ChannelB
+Capacity             : 8589934592
+Caption              : Physical Memory
+ConfiguredClockSpeed : 2667
+ConfiguredVoltage    : 1200
+CreationClassName    : Win32_PhysicalMemory
+DataWidth            : 64
+Description          : Physical Memory
+DeviceLocator        : Bottom-Slot 2(right)
+FormFactor           : 12
+HotSwappable         : 
+InstallDate          : 
+InterleaveDataDepth  : 0
+InterleavePosition   : 1
+Manufacturer         : Ramaxel
+MaxVoltage           : 0
+MemoryType           : 0
+MinVoltage           : 0
+Model                : 
+Name                 : Physical Memory
+OtherIdentifyingInfo : 
+PartNumber           : RMSA3260ME78HAF-2666
+PositionInRow        : 1
+PoweredOn            : 
+Removable            : 
+Replaceable          : 
+SerialNumber         : 13F6ABB0
+SKU                  : 
+SMBIOSMemoryType     : 26
+Speed                : 2667
+Status               : 
+Tag                  : Physical Memory 1
+TotalWidth           : 64
+TypeDetail           : 128
+Version              : 
+
+
+
+=====================================
+COMPUTER : 5CD04794WV 
+CLASS    : CIM_DiskDrive 
+=====================================
+
+
+ConfigManagerErrorCode      : 0
+LastErrorCode               : 
+NeedsCleaning               : 
+Status                      : OK
+DeviceID                    : \\.\PHYSICALDRIVE0
+StatusInfo                  : 
+Partitions                  : 1
+BytesPerSector              : 512
+ConfigManagerUserConfig     : False
+DefaultBlockSize            : 
+Index                       : 0
+InstallDate                 : 
+InterfaceType               : IDE
+MaxBlockSize                : 
+MaxMediaSize                : 
+MinBlockSize                : 
+NumberOfMediaSupported      : 
+SectorsPerTrack             : 63
+Size                        : 1000202273280
+TotalCylinders              : 121601
+TotalHeads                  : 255
+TotalSectors                : 1953520065
+TotalTracks                 : 31008255
+TracksPerCylinder           : 255
+Availability                : 
+Capabilities                : {3, 4}
+CapabilityDescriptions      : {Random Access, Supports Writing}
+Caption                     : WDC  WDS100T2B0A-00SM50
+CompressionMethod           : 
+CreationClassName           : Win32_DiskDrive
+Description                 : Disk drive
+ErrorCleared                : 
+ErrorDescription            : 
+ErrorMethodology            : 
+FirmwareRevision            : 415020WD
+Manufacturer                : (Standard disk drives)
+MediaLoaded                 : True
+MediaType                   : Fixed hard disk media
+Model                       : WDC  WDS100T2B0A-00SM50
+Name                        : \\.\PHYSICALDRIVE0
+PNPDeviceID                 : SCSI\DISK&VEN_WDC&PROD_WDS100T2B0A-00SM\4&219DD997&0&000000
+PowerManagementCapabilities : 
+PowerManagementSupported    : 
+SCSIBus                     : 0
+SCSILogicalUnit             : 0
+SCSIPort                    : 0
+SCSITargetId                : 0
+SerialNumber                : 21503C443413
+Signature                   : 3552081496
+SystemCreationClassName     : Win32_ComputerSystem
+SystemName                  : 5CD04794WV
+
+ConfigManagerErrorCode      : 0
+LastErrorCode               : 
+NeedsCleaning               : 
+Status                      : OK
+DeviceID                    : \\.\PHYSICALDRIVE1
+StatusInfo                  : 
+Partitions                  : 3
+BytesPerSector              : 512
+ConfigManagerUserConfig     : False
+DefaultBlockSize            : 
+Index                       : 1
+InstallDate                 : 
+InterfaceType               : SCSI
+MaxBlockSize                : 
+MaxMediaSize                : 
+MinBlockSize                : 
+NumberOfMediaSupported      : 
+SectorsPerTrack             : 63
+Size                        : 512105932800
+TotalCylinders              : 62260
+TotalHeads                  : 255
+TotalSectors                : 1000206900
+TotalTracks                 : 15876300
+TracksPerCylinder           : 255
+Availability                : 
+Capabilities                : {3, 4}
+CapabilityDescriptions      : {Random Access, Supports Writing}
+Caption                     : WDC PC SN530 SDBPNPZ-512G-1006
+CompressionMethod           : 
+CreationClassName           : Win32_DiskDrive
+Description                 : Disk drive
+ErrorCleared                : 
+ErrorDescription            : 
+ErrorMethodology            : 
+FirmwareRevision            : HPS2
+Manufacturer                : (Standard disk drives)
+MediaLoaded                 : True
+MediaType                   : Fixed hard disk media
+Model                       : WDC PC SN530 SDBPNPZ-512G-1006
+Name                        : \\.\PHYSICALDRIVE1
+PNPDeviceID                 : SCSI\DISK&VEN_NVME&PROD_WDC_PC_SN530_SDB\5&79C7230&0&000000
+PowerManagementCapabilities : 
+PowerManagementSupported    : 
+SCSIBus                     : 0
+SCSILogicalUnit             : 0
+SCSIPort                    : 1
+SCSITargetId                : 0
+SerialNumber                : E823_8FA6_BF53_0001_001B_448B_49E8_0657.
+Signature                   : 
+SystemCreationClassName     : Win32_ComputerSystem
+SystemName                  : 5CD04794WV
+
+
+
+=====================================
+COMPUTER : 5CD04794WV 
+CLASS    : CIM_VideoController 
+=====================================
+
+
+AcceleratorCapabilities      : 
+AdapterCompatibility         : NVIDIA
+AdapterDACType               : Integrated RAMDAC
+AdapterRAM                   : 2147483648
+Availability                 : 8
+CapabilityDescriptions       : 
+Caption                      : NVIDIA GeForce MX250
+ColorTableEntries            : 
+ConfigManagerErrorCode       : 0
+ConfigManagerUserConfig      : False
+CreationClassName            : Win32_VideoController
+CurrentBitsPerPixel          : 
+CurrentHorizontalResolution  : 
+CurrentNumberOfColors        : 
+CurrentNumberOfColumns       : 
+CurrentNumberOfRows          : 
+CurrentRefreshRate           : 
+CurrentScanMode              : 
+CurrentVerticalResolution    : 
+Description                  : NVIDIA GeForce MX250
+DeviceID                     : VideoController1
+DeviceSpecificPens           : 
+DitherType                   : 
+DriverDate                   : 20240102000000.000000-000
+DriverVersion                : 31.0.15.3818
+ErrorCleared                 : 
+ErrorDescription             : 
+ICMIntent                    : 
+ICMMethod                    : 
+InfFilename                  : oem187.inf
+InfSection                   : Section068
+InstallDate                  : 
+InstalledDisplayDrivers      : C:\Windows\System32\DriverStore\FileRepository\nvbl.inf_amd64_04aeef3da3f64507\nvldumdx.
+                               dll,C:\Windows\System32\DriverStore\FileRepository\nvbl.inf_amd64_04aeef3da3f64507\nvldu
+                               mdx.dll,C:\Windows\System32\DriverStore\FileRepository\nvbl.inf_amd64_04aeef3da3f64507\n
+                               vldumdx.dll,C:\Windows\System32\DriverStore\FileRepository\nvbl.inf_amd64_04aeef3da3f645
+                               07\nvldumdx.dll
+LastErrorCode                : 
+MaxMemorySupported           : 
+MaxNumberControlled          : 
+MaxRefreshRate               : 
+MinRefreshRate               : 
+Monochrome                   : False
+Name                         : NVIDIA GeForce MX250
+NumberOfColorPlanes          : 
+NumberOfVideoPages           : 
+PNPDeviceID                  : PCI\VEN_10DE&DEV_1D13&SUBSYS_869F103C&REV_A1\4&39EF0BCC&0&00E0
+PowerManagementCapabilities  : 
+PowerManagementSupported     : 
+ProtocolSupported            : 
+ReservedSystemPaletteEntries : 
+SpecificationVersion         : 
+Status                       : OK
+StatusInfo                   : 
+SystemCreationClassName      : Win32_ComputerSystem
+SystemName                   : 5CD04794WV
+SystemPaletteEntries         : 
+TimeOfLastReset              : 
+VideoArchitecture            : 5
+VideoMemoryType              : 2
+VideoMode                    : 
+VideoModeDescription         : 
+VideoProcessor               : NVIDIA GeForce MX250
+
+AcceleratorCapabilities      : 
+AdapterCompatibility         : Intel Corporation
+AdapterDACType               : Internal
+AdapterRAM                   : 1073741824
+Availability                 : 3
+CapabilityDescriptions       : 
+Caption                      : Intel(R) UHD Graphics
+ColorTableEntries            : 
+ConfigManagerErrorCode       : 0
+ConfigManagerUserConfig      : False
+CreationClassName            : Win32_VideoController
+CurrentBitsPerPixel          : 32
+CurrentHorizontalResolution  : 1920
+CurrentNumberOfColors        : 4294967296
+CurrentNumberOfColumns       : 0
+CurrentNumberOfRows          : 0
+CurrentRefreshRate           : 59
+CurrentScanMode              : 4
+CurrentVerticalResolution    : 1080
+Description                  : Intel(R) UHD Graphics
+DeviceID                     : VideoController2
+DeviceSpecificPens           : 
+DitherType                   : 0
+DriverDate                   : 20230524000000.000000-000
+DriverVersion                : 31.0.101.2125
+ErrorCleared                 : 
+ErrorDescription             : 
+ICMIntent                    : 
+ICMMethod                    : 
+InfFilename                  : oem190.inf
+InfSection                   : iCML_w10_DS
+InstallDate                  : 
+InstalledDisplayDrivers      : C:\Windows\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_d26492756b3b82be\igdum
+                               dim64.dll,C:\Windows\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_d26492756b3b
+                               82be\igd10iumd64.dll,C:\Windows\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_d
+                               26492756b3b82be\igd10iumd64.dll,C:\Windows\System32\DriverStore\FileRepository\iigd_dch.
+                               inf_amd64_d26492756b3b82be\igd12umd64.dll
+LastErrorCode                : 
+MaxMemorySupported           : 
+MaxNumberControlled          : 
+MaxRefreshRate               : 74
+MinRefreshRate               : 50
+Monochrome                   : False
+Name                         : Intel(R) UHD Graphics
+NumberOfColorPlanes          : 
+NumberOfVideoPages           : 
+PNPDeviceID                  : PCI\VEN_8086&DEV_9B41&SUBSYS_869D103C&REV_02\3&11583659&0&10
+PowerManagementCapabilities  : 
+PowerManagementSupported     : 
+ProtocolSupported            : 
+ReservedSystemPaletteEntries : 
+SpecificationVersion         : 
+Status                       : OK
+StatusInfo                   : 
+SystemCreationClassName      : Win32_ComputerSystem
+SystemName                   : 5CD04794WV
+SystemPaletteEntries         : 
+TimeOfLastReset              : 
+VideoArchitecture            : 5
+VideoMemoryType              : 2
+VideoMode                    : 
+VideoModeDescription         : 1920 x 1080 x 4294967296 colors
+VideoProcessor               : Intel(R) UHD Graphics Family
+
+
+
+
