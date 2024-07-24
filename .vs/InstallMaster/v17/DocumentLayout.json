@@ -1,40 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\W10User\\Documents\\OnlineRepositories\\InstallMaster\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{BFD11F3A-036C-4BD2-8EC5-A04014B219D8}|InstallMasterLib\\InstallMasterLib.csproj|d:\\w10user\\documents\\onlinerepositories\\installmaster\\installmasterlib\\storage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BFD11F3A-036C-4BD2-8EC5-A04014B219D8}|InstallMasterLib\\InstallMasterLib.csproj|solutionrelative:installmasterlib\\storage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BFD11F3A-036C-4BD2-8EC5-A04014B219D8}|InstallMasterLib\\InstallMasterLib.csproj|d:\\w10user\\documents\\onlinerepositories\\installmaster\\installmasterlib\\networkcard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BFD11F3A-036C-4BD2-8EC5-A04014B219D8}|InstallMasterLib\\InstallMasterLib.csproj|solutionrelative:installmasterlib\\networkcard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BFD11F3A-036C-4BD2-8EC5-A04014B219D8}|InstallMasterLib\\InstallMasterLib.csproj|d:\\w10user\\documents\\onlinerepositories\\installmaster\\installmasterlib\\memory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BFD11F3A-036C-4BD2-8EC5-A04014B219D8}|InstallMasterLib\\InstallMasterLib.csproj|solutionrelative:installmasterlib\\memory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BFD11F3A-036C-4BD2-8EC5-A04014B219D8}|InstallMasterLib\\InstallMasterLib.csproj|d:\\w10user\\documents\\onlinerepositories\\installmaster\\installmasterlib\\computer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BFD11F3A-036C-4BD2-8EC5-A04014B219D8}|InstallMasterLib\\InstallMasterLib.csproj|solutionrelative:installmasterlib\\computer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BFD11F3A-036C-4BD2-8EC5-A04014B219D8}|InstallMasterLib\\InstallMasterLib.csproj|D:\\W10User\\Documents\\OnlineRepositories\\InstallMaster\\installmasterlib\\motherboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BFD11F3A-036C-4BD2-8EC5-A04014B219D8}|InstallMasterLib\\InstallMasterLib.csproj|solutionrelative:installmasterlib\\motherboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ED7CE0D7-1FE8-48AF-9D8C-9CB626B976B5}|InstallMasterConsole\\InstallMasterConsole.csproj|D:\\W10User\\Documents\\OnlineRepositories\\InstallMaster\\installmasterconsole\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ED7CE0D7-1FE8-48AF-9D8C-9CB626B976B5}|InstallMasterConsole\\InstallMasterConsole.csproj|solutionrelative:installmasterconsole\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BFD11F3A-036C-4BD2-8EC5-A04014B219D8}|InstallMasterLib\\InstallMasterLib.csproj|d:\\w10user\\documents\\onlinerepositories\\installmaster\\installmasterlib\\helperfunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BFD11F3A-036C-4BD2-8EC5-A04014B219D8}|InstallMasterLib\\InstallMasterLib.csproj|solutionrelative:installmasterlib\\helperfunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BFD11F3A-036C-4BD2-8EC5-A04014B219D8}|InstallMasterLib\\InstallMasterLib.csproj|D:\\W10User\\Documents\\OnlineRepositories\\InstallMaster\\installmasterlib\\wmiquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BFD11F3A-036C-4BD2-8EC5-A04014B219D8}|InstallMasterLib\\InstallMasterLib.csproj|solutionrelative:installmasterlib\\wmiquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -42,115 +9,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Storage.cs",
-              "DocumentMoniker": "D:\\W10User\\Documents\\OnlineRepositories\\InstallMaster\\InstallMasterLib\\Storage.cs",
-              "RelativeDocumentMoniker": "InstallMasterLib\\Storage.cs",
-              "ToolTip": "D:\\W10User\\Documents\\OnlineRepositories\\InstallMaster\\InstallMasterLib\\Storage.cs",
-              "RelativeToolTip": "InstallMasterLib\\Storage.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-24T18:05:14.124Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Memory.cs",
-              "DocumentMoniker": "D:\\W10User\\Documents\\OnlineRepositories\\InstallMaster\\InstallMasterLib\\Memory.cs",
-              "RelativeDocumentMoniker": "InstallMasterLib\\Memory.cs",
-              "ToolTip": "D:\\W10User\\Documents\\OnlineRepositories\\InstallMaster\\InstallMasterLib\\Memory.cs",
-              "RelativeToolTip": "InstallMasterLib\\Memory.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-24T18:04:16.974Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "NetworkCard.cs",
-              "DocumentMoniker": "D:\\W10User\\Documents\\OnlineRepositories\\InstallMaster\\InstallMasterLib\\NetworkCard.cs",
-              "RelativeDocumentMoniker": "InstallMasterLib\\NetworkCard.cs",
-              "ToolTip": "D:\\W10User\\Documents\\OnlineRepositories\\InstallMaster\\InstallMasterLib\\NetworkCard.cs",
-              "RelativeToolTip": "InstallMasterLib\\NetworkCard.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-24T18:03:47.602Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "HelperFunctions.cs",
-              "DocumentMoniker": "D:\\W10User\\Documents\\OnlineRepositories\\InstallMaster\\InstallMasterLib\\HelperFunctions.cs",
-              "RelativeDocumentMoniker": "InstallMasterLib\\HelperFunctions.cs",
-              "ToolTip": "D:\\W10User\\Documents\\OnlineRepositories\\InstallMaster\\InstallMasterLib\\HelperFunctions.cs",
-              "RelativeToolTip": "InstallMasterLib\\HelperFunctions.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA4AAAACAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-24T17:50:25.165Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\W10User\\Documents\\OnlineRepositories\\InstallMaster\\InstallMasterConsole\\Program.cs",
-              "RelativeDocumentMoniker": "InstallMasterConsole\\Program.cs",
-              "ToolTip": "D:\\W10User\\Documents\\OnlineRepositories\\InstallMaster\\InstallMasterConsole\\Program.cs",
-              "RelativeToolTip": "InstallMasterConsole\\Program.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAnwBsAAAA6AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-24T10:18:54.275Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Computer.cs",
-              "DocumentMoniker": "D:\\W10User\\Documents\\OnlineRepositories\\InstallMaster\\InstallMasterLib\\Computer.cs",
-              "RelativeDocumentMoniker": "InstallMasterLib\\Computer.cs",
-              "ToolTip": "D:\\W10User\\Documents\\OnlineRepositories\\InstallMaster\\InstallMasterLib\\Computer.cs",
-              "RelativeToolTip": "InstallMasterLib\\Computer.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABIAAAADAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-24T10:18:41.022Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Motherboard.cs",
-              "DocumentMoniker": "D:\\W10User\\Documents\\OnlineRepositories\\InstallMaster\\InstallMasterLib\\Motherboard.cs",
-              "RelativeDocumentMoniker": "InstallMasterLib\\Motherboard.cs",
-              "ToolTip": "D:\\W10User\\Documents\\OnlineRepositories\\InstallMaster\\InstallMasterLib\\Motherboard.cs",
-              "RelativeToolTip": "InstallMasterLib\\Motherboard.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABAAAAADAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T06:50:55.784Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "WMIQuery.cs",
-              "DocumentMoniker": "D:\\W10User\\Documents\\OnlineRepositories\\InstallMaster\\InstallMasterLib\\WMIQuery.cs",
-              "RelativeDocumentMoniker": "InstallMasterLib\\WMIQuery.cs",
-              "ToolTip": "D:\\W10User\\Documents\\OnlineRepositories\\InstallMaster\\InstallMasterLib\\WMIQuery.cs",
-              "RelativeToolTip": "InstallMasterLib\\WMIQuery.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T17:49:04.119Z",
-              "EditorCaption": ""
             }
           ]
         }
