@@ -44,7 +44,7 @@
   <ItemGroup>
     <Compile Include="Computer.cs" />
     <Compile Include="HelperFunctions.cs" />
-    <Compile Include="Memory.cs" />
+    <Compile Include="RAM.cs" />
     <Compile Include="Motherboard.cs" />
     <Compile Include="NetworkCard.cs" />
     <Compile Include="Storage.cs" />
