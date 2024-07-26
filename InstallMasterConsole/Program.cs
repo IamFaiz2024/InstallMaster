@@ -16,12 +16,12 @@ namespace InstallMasterConsole
 		static void Main(string[] args)
 		{
 			#region Test the Motherboard class
-			/**/
+			/*
 			var motherboard = new Motherboard();            
             var motherboardDetails = motherboard.GetMBProps();
 			Console.WriteLine("***MotherBoard Details***\n");
 			foreach (var compdetail in motherboardDetails) {Console.WriteLine($"{compdetail.Key}: {compdetail.Value}");}
-            
+            */
 			#endregion
 
 			#region Test the Computer class
@@ -41,6 +41,10 @@ namespace InstallMasterConsole
 			foreach (var ramdetail in memoryInfoList) { Console.WriteLine($"{ramdetail.Key}: {ramdetail.Value}"); }
 			*/
 			#endregion
+
+			Computer mycomputer = new Computer();
+
+			mycomputer.ComputerInfo();
 
 			Console.ReadLine();
 		}

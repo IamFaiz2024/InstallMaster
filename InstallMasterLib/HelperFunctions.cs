@@ -31,8 +31,8 @@ namespace InstallMasterLib
 		*/
 		#endregion
 
-		#region Get WMI Class Details
-		public static Dictionary<string, object> GetWmiClassDetails(string Component, string WmiClass, string[] WmiClassProps)
+		#region Get WMI Class Details1
+		public static Dictionary<string, object> GetWmiClassDetails(string Component, string WmiClass, string[] WmiClassProps,string Filter=null)
 		{
 			WMIQuery _wmiQuery = new WMIQuery();
 			string StringWmiClassProps = string.Join(",", WmiClassProps);
@@ -70,7 +70,8 @@ namespace InstallMasterLib
 				}
 			}*/
 			#endregion
-			#region Prefix Component and Intance
+			#region Prefix Component and Intance /**/
+			/*
 			int instanceIndex = 0;
 			foreach (var WmiResultsItem in WmiResults)
 			{
@@ -82,10 +83,27 @@ namespace InstallMasterLib
 				}
 				instanceIndex++;
 			}
+			*/
 			#endregion
-
+			
 			return WmiClassPropsList;
 		}
+		#endregion
+
+		#region Get WMI Class Details2
+		public static Dictionary<string, object> GetWmiClassDetails(string WmiClass, string[] WmiClassProps, string Filter = null)
+		{
+			WMIQuery _wmiQuery = new WMIQuery();
+			string StringWmiClassProps = string.Join(",", WmiClassProps);
+			string WmiQuery = $"SELECT {StringWmiClassProps} FROM {WmiClass}";
+
+			var WmiResults = _wmiQuery.ExecuteWMIQuery(WmiQuery);
+			var WmiClassPropsList = new Dictionary<string, object>();
+			
+			return WmiClassPropsList;
+		}
+
+
 		#endregion
 
 		#region Combine 2 or more Dictionay/Dictionaries
