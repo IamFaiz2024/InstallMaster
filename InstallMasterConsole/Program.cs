@@ -1,5 +1,6 @@
 ﻿using InstallMaster;
 using InstallMasterLib;
+using InstallMasterLib.InstallMasterLib;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,6 +23,20 @@ namespace InstallMasterConsole
 
             Motherboard mymotherboard = new Motherboard();
 			mymotherboard.MotherboardInfo();
+
+            var networkAdapterManager = new NetworkAdapterManager();
+
+            var memoryManager = new MemoryManager();
+
+            Console.WriteLine("******************************\n");
+            Console.WriteLine("NIC Information");
+            //HelperFunctions.DisplayObjectProperties(networkAdapterManager);
+            networkAdapterManager.NetworkInfo();
+
+            Console.WriteLine("******************************\n");
+            Console.WriteLine("Memory Information");
+            //HelperFunctions.DisplayObjectProperties(networkAdapterManager);
+            memoryManager.MemoryInfo();
 
 
             Console.WriteLine("******************************\n");

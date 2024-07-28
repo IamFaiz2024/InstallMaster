@@ -12,7 +12,7 @@ namespace InstallMasterLib
 {
     public class Device
     {
-        public string SerialNumber { get; set; }
+        public string SerialNumber { get; set; } = "Unknown";
         public string Manufacturer { get; set; }
         public string Model { get; set; }
         public string ModelYear { get; set; }
@@ -28,10 +28,12 @@ namespace InstallMasterLib
             var wmiProperties = wmiquery.ExecuteWMIQuery("SELECT * FROM CIM_ComputerSystem");
             foreach (var PropDict in wmiProperties)
             {
-                if (PropDict.TryGetValue("Caption", out var caption))
+                /*
+                if (PropDict.TryGetValue("Name", out var name))
                 {
-                    this.SerialNumber = caption?.ToString() ?? "Unknown";
+                    this.SerialNumber = name?.ToString() ?? "Unknown";
                 }
+                */
                 if (PropDict.TryGetValue("Description", out var description))
                 {
                     this.DeviceType = description?.ToString() ?? "Unknown";

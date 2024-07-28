@@ -523,4 +523,913 @@ VideoProcessor               : Intel(R) UHD Graphics Family
 
 
 
+=====================================
+COMPUTER : 5CD04794WV 
+CLASS    : CIM_NetworkAdapter 
+=====================================
+
+
+Availability                : 3
+Name                        : Microsoft Kernel Debug Network Adapter
+Status                      : 
+StatusInfo                  : 
+DeviceID                    : 0
+AdapterType                 : 
+AdapterTypeId               : 
+AutoSense                   : 
+Caption                     : [00000000] Microsoft Kernel Debug Network Adapter
+ConfigManagerErrorCode      : 0
+ConfigManagerUserConfig     : False
+CreationClassName           : Win32_NetworkAdapter
+Description                 : Microsoft Kernel Debug Network Adapter
+ErrorCleared                : 
+ErrorDescription            : 
+GUID                        : 
+Index                       : 0
+InstallDate                 : 
+Installed                   : True
+InterfaceIndex              : 8
+LastErrorCode               : 
+MACAddress                  : 
+Manufacturer                : Microsoft
+MaxNumberControlled         : 0
+MaxSpeed                    : 
+NetConnectionID             : 
+NetConnectionStatus         : 
+NetEnabled                  : 
+NetworkAddresses            : 
+PermanentAddress            : 
+PhysicalAdapter             : False
+PNPDeviceID                 : ROOT\KDNIC\0000
+PowerManagementCapabilities : 
+PowerManagementSupported    : False
+ProductName                 : Microsoft Kernel Debug Network Adapter
+ServiceName                 : kdnic
+Speed                       : 
+SystemCreationClassName     : Win32_ComputerSystem
+SystemName                  : 5CD04794WV
+TimeOfLastReset             : 20240727071515.500000+240
+
+Availability                : 3
+Name                        : Realtek PCIe GbE Family Controller
+Status                      : 
+StatusInfo                  : 
+DeviceID                    : 1
+AdapterType                 : Ethernet 802.3
+AdapterTypeId               : 0
+AutoSense                   : 
+Caption                     : [00000001] Realtek PCIe GbE Family Controller
+ConfigManagerErrorCode      : 0
+ConfigManagerUserConfig     : False
+CreationClassName           : Win32_NetworkAdapter
+Description                 : Realtek PCIe GbE Family Controller
+ErrorCleared                : 
+ErrorDescription            : 
+GUID                        : {C2B38A0E-71EE-424E-B42F-7F427E8E4E91}
+Index                       : 1
+InstallDate                 : 
+Installed                   : True
+InterfaceIndex              : 24
+LastErrorCode               : 
+MACAddress                  : 30:24:A9:7D:D4:F8
+Manufacturer                : Realtek
+MaxNumberControlled         : 0
+MaxSpeed                    : 
+NetConnectionID             : Ethernet
+NetConnectionStatus         : 7
+NetEnabled                  : False
+NetworkAddresses            : 
+PermanentAddress            : 
+PhysicalAdapter             : True
+PNPDeviceID                 : PCI\VEN_10EC&DEV_8168&SUBSYS_869D103C&REV_15\0100F8D47DA9243000
+PowerManagementCapabilities : 
+PowerManagementSupported    : False
+ProductName                 : Realtek PCIe GbE Family Controller
+ServiceName                 : rt640x64
+Speed                       : 
+SystemCreationClassName     : Win32_ComputerSystem
+SystemName                  : 5CD04794WV
+TimeOfLastReset             : 20240727071515.500000+240
+
+Availability                : 3
+Name                        : Intel(R) Wi-Fi 6 AX201 160MHz
+Status                      : 
+StatusInfo                  : 
+DeviceID                    : 2
+AdapterType                 : Ethernet 802.3
+AdapterTypeId               : 0
+AutoSense                   : 
+Caption                     : [00000002] Intel(R) Wi-Fi 6 AX201 160MHz
+ConfigManagerErrorCode      : 0
+ConfigManagerUserConfig     : False
+CreationClassName           : Win32_NetworkAdapter
+Description                 : Intel(R) Wi-Fi 6 AX201 160MHz
+ErrorCleared                : 
+ErrorDescription            : 
+GUID                        : {A9FD4683-C27A-423D-8BC5-B644E980C388}
+Index                       : 2
+InstallDate                 : 
+Installed                   : True
+InterfaceIndex              : 23
+LastErrorCode               : 
+MACAddress                  : DC:41:A9:D2:69:6E
+Manufacturer                : Intel Corporation
+MaxNumberControlled         : 0
+MaxSpeed                    : 
+NetConnectionID             : Wi-Fi
+NetConnectionStatus         : 2
+NetEnabled                  : True
+NetworkAddresses            : 
+PermanentAddress            : 
+PhysicalAdapter             : True
+PNPDeviceID                 : PCI\VEN_8086&DEV_02F0&SUBSYS_00748086&REV_00\3&11583659&0&A3
+PowerManagementCapabilities : 
+PowerManagementSupported    : False
+ProductName                 : Intel(R) Wi-Fi 6 AX201 160MHz
+ServiceName                 : Netwtw10
+Speed                       : 144400000
+SystemCreationClassName     : Win32_ComputerSystem
+SystemName                  : 5CD04794WV
+TimeOfLastReset             : 20240727071515.500000+240
+
+Availability                : 3
+Name                        : Microsoft Wi-Fi Direct Virtual Adapter
+Status                      : 
+StatusInfo                  : 
+DeviceID                    : 3
+AdapterType                 : Ethernet 802.3
+AdapterTypeId               : 0
+AutoSense                   : 
+Caption                     : [00000003] Microsoft Wi-Fi Direct Virtual Adapter
+ConfigManagerErrorCode      : 0
+ConfigManagerUserConfig     : False
+CreationClassName           : Win32_NetworkAdapter
+Description                 : Microsoft Wi-Fi Direct Virtual Adapter
+ErrorCleared                : 
+ErrorDescription            : 
+GUID                        : 
+Index                       : 3
+InstallDate                 : 
+Installed                   : True
+InterfaceIndex              : 18
+LastErrorCode               : 
+MACAddress                  : DC:41:A9:D2:69:6F
+Manufacturer                : Microsoft
+MaxNumberControlled         : 0
+MaxSpeed                    : 
+NetConnectionID             : 
+NetConnectionStatus         : 
+NetEnabled                  : 
+NetworkAddresses            : 
+PermanentAddress            : 
+PhysicalAdapter             : False
+PNPDeviceID                 : {5D624F94-8850-40C3-A3FA-A4FD2080BAF3}\VWIFIMP_WFD\4&3A1543B2&0&11
+PowerManagementCapabilities : 
+PowerManagementSupported    : False
+ProductName                 : Microsoft Wi-Fi Direct Virtual Adapter
+ServiceName                 : vwifimp
+Speed                       : 9223372036854775807
+SystemCreationClassName     : Win32_ComputerSystem
+SystemName                  : 5CD04794WV
+TimeOfLastReset             : 20240727071515.500000+240
+
+Availability                : 3
+Name                        : Microsoft Wi-Fi Direct Virtual Adapter #2
+Status                      : 
+StatusInfo                  : 
+DeviceID                    : 4
+AdapterType                 : Ethernet 802.3
+AdapterTypeId               : 0
+AutoSense                   : 
+Caption                     : [00000004] Microsoft Wi-Fi Direct Virtual Adapter
+ConfigManagerErrorCode      : 0
+ConfigManagerUserConfig     : False
+CreationClassName           : Win32_NetworkAdapter
+Description                 : Microsoft Wi-Fi Direct Virtual Adapter
+ErrorCleared                : 
+ErrorDescription            : 
+GUID                        : 
+Index                       : 4
+InstallDate                 : 
+Installed                   : True
+InterfaceIndex              : 21
+LastErrorCode               : 
+MACAddress                  : DE:41:A9:D2:69:6E
+Manufacturer                : Microsoft
+MaxNumberControlled         : 0
+MaxSpeed                    : 
+NetConnectionID             : 
+NetConnectionStatus         : 
+NetEnabled                  : 
+NetworkAddresses            : 
+PermanentAddress            : 
+PhysicalAdapter             : False
+PNPDeviceID                 : {5D624F94-8850-40C3-A3FA-A4FD2080BAF3}\VWIFIMP_WFD\4&3A1543B2&0&12
+PowerManagementCapabilities : 
+PowerManagementSupported    : False
+ProductName                 : Microsoft Wi-Fi Direct Virtual Adapter
+ServiceName                 : vwifimp
+Speed                       : 9223372036854775807
+SystemCreationClassName     : Win32_ComputerSystem
+SystemName                  : 5CD04794WV
+TimeOfLastReset             : 20240727071515.500000+240
+
+Availability                : 3
+Name                        : Hyper-V Virtual Switch Extension Adapter
+Status                      : 
+StatusInfo                  : 
+DeviceID                    : 5
+AdapterType                 : Ethernet 802.3
+AdapterTypeId               : 0
+AutoSense                   : 
+Caption                     : [00000005] Hyper-V Virtual Switch Extension Adapter
+ConfigManagerErrorCode      : 0
+ConfigManagerUserConfig     : False
+CreationClassName           : Win32_NetworkAdapter
+Description                 : Hyper-V Virtual Switch Extension Adapter
+ErrorCleared                : 
+ErrorDescription            : 
+GUID                        : 
+Index                       : 5
+InstallDate                 : 
+Installed                   : True
+InterfaceIndex              : 22
+LastErrorCode               : 
+MACAddress                  : 
+Manufacturer                : Microsoft
+MaxNumberControlled         : 0
+MaxSpeed                    : 
+NetConnectionID             : 
+NetConnectionStatus         : 
+NetEnabled                  : 
+NetworkAddresses            : 
+PermanentAddress            : 
+PhysicalAdapter             : False
+PNPDeviceID                 : ROOT\VMS_VSMP\0000
+PowerManagementCapabilities : 
+PowerManagementSupported    : False
+ProductName                 : Hyper-V Virtual Switch Extension Adapter
+ServiceName                 : VMSMP
+Speed                       : 
+SystemCreationClassName     : Win32_ComputerSystem
+SystemName                  : 5CD04794WV
+TimeOfLastReset             : 20240727071515.500000+240
+
+Availability                : 3
+Name                        : WAN Miniport (SSTP)
+Status                      : 
+StatusInfo                  : 
+DeviceID                    : 6
+AdapterType                 : 
+AdapterTypeId               : 
+AutoSense                   : 
+Caption                     : [00000006] WAN Miniport (SSTP)
+ConfigManagerErrorCode      : 0
+ConfigManagerUserConfig     : False
+CreationClassName           : Win32_NetworkAdapter
+Description                 : WAN Miniport (SSTP)
+ErrorCleared                : 
+ErrorDescription            : 
+GUID                        : 
+Index                       : 6
+InstallDate                 : 
+Installed                   : True
+InterfaceIndex              : 12
+LastErrorCode               : 
+MACAddress                  : 
+Manufacturer                : Microsoft
+MaxNumberControlled         : 0
+MaxSpeed                    : 
+NetConnectionID             : 
+NetConnectionStatus         : 
+NetEnabled                  : 
+NetworkAddresses            : 
+PermanentAddress            : 
+PhysicalAdapter             : False
+PNPDeviceID                 : SWD\MSRRAS\MS_SSTPMINIPORT
+PowerManagementCapabilities : 
+PowerManagementSupported    : False
+ProductName                 : WAN Miniport (SSTP)
+ServiceName                 : RasSstp
+Speed                       : 
+SystemCreationClassName     : Win32_ComputerSystem
+SystemName                  : 5CD04794WV
+TimeOfLastReset             : 20240727071515.500000+240
+
+Availability                : 3
+Name                        : WAN Miniport (IKEv2)
+Status                      : 
+StatusInfo                  : 
+DeviceID                    : 7
+AdapterType                 : 
+AdapterTypeId               : 
+AutoSense                   : 
+Caption                     : [00000007] WAN Miniport (IKEv2)
+ConfigManagerErrorCode      : 0
+ConfigManagerUserConfig     : False
+CreationClassName           : Win32_NetworkAdapter
+Description                 : WAN Miniport (IKEv2)
+ErrorCleared                : 
+ErrorDescription            : 
+GUID                        : 
+Index                       : 7
+InstallDate                 : 
+Installed                   : True
+InterfaceIndex              : 20
+LastErrorCode               : 
+MACAddress                  : 
+Manufacturer                : Microsoft
+MaxNumberControlled         : 0
+MaxSpeed                    : 
+NetConnectionID             : 
+NetConnectionStatus         : 
+NetEnabled                  : 
+NetworkAddresses            : 
+PermanentAddress            : 
+PhysicalAdapter             : False
+PNPDeviceID                 : SWD\MSRRAS\MS_AGILEVPNMINIPORT
+PowerManagementCapabilities : 
+PowerManagementSupported    : False
+ProductName                 : WAN Miniport (IKEv2)
+ServiceName                 : RasAgileVpn
+Speed                       : 
+SystemCreationClassName     : Win32_ComputerSystem
+SystemName                  : 5CD04794WV
+TimeOfLastReset             : 20240727071515.500000+240
+
+Availability                : 3
+Name                        : WAN Miniport (L2TP)
+Status                      : 
+StatusInfo                  : 
+DeviceID                    : 8
+AdapterType                 : 
+AdapterTypeId               : 
+AutoSense                   : 
+Caption                     : [00000008] WAN Miniport (L2TP)
+ConfigManagerErrorCode      : 0
+ConfigManagerUserConfig     : False
+CreationClassName           : Win32_NetworkAdapter
+Description                 : WAN Miniport (L2TP)
+ErrorCleared                : 
+ErrorDescription            : 
+GUID                        : 
+Index                       : 8
+InstallDate                 : 
+Installed                   : True
+InterfaceIndex              : 13
+LastErrorCode               : 
+MACAddress                  : 
+Manufacturer                : Microsoft
+MaxNumberControlled         : 0
+MaxSpeed                    : 
+NetConnectionID             : 
+NetConnectionStatus         : 
+NetEnabled                  : 
+NetworkAddresses            : 
+PermanentAddress            : 
+PhysicalAdapter             : False
+PNPDeviceID                 : SWD\MSRRAS\MS_L2TPMINIPORT
+PowerManagementCapabilities : 
+PowerManagementSupported    : False
+ProductName                 : WAN Miniport (L2TP)
+ServiceName                 : Rasl2tp
+Speed                       : 
+SystemCreationClassName     : Win32_ComputerSystem
+SystemName                  : 5CD04794WV
+TimeOfLastReset             : 20240727071515.500000+240
+
+Availability                : 3
+Name                        : WAN Miniport (PPTP)
+Status                      : 
+StatusInfo                  : 
+DeviceID                    : 9
+AdapterType                 : 
+AdapterTypeId               : 
+AutoSense                   : 
+Caption                     : [00000009] WAN Miniport (PPTP)
+ConfigManagerErrorCode      : 0
+ConfigManagerUserConfig     : False
+CreationClassName           : Win32_NetworkAdapter
+Description                 : WAN Miniport (PPTP)
+ErrorCleared                : 
+ErrorDescription            : 
+GUID                        : 
+Index                       : 9
+InstallDate                 : 
+Installed                   : True
+InterfaceIndex              : 11
+LastErrorCode               : 
+MACAddress                  : 
+Manufacturer                : Microsoft
+MaxNumberControlled         : 0
+MaxSpeed                    : 
+NetConnectionID             : 
+NetConnectionStatus         : 
+NetEnabled                  : 
+NetworkAddresses            : 
+PermanentAddress            : 
+PhysicalAdapter             : False
+PNPDeviceID                 : SWD\MSRRAS\MS_PPTPMINIPORT
+PowerManagementCapabilities : 
+PowerManagementSupported    : False
+ProductName                 : WAN Miniport (PPTP)
+ServiceName                 : PptpMiniport
+Speed                       : 
+SystemCreationClassName     : Win32_ComputerSystem
+SystemName                  : 5CD04794WV
+TimeOfLastReset             : 20240727071515.500000+240
+
+Availability                : 3
+Name                        : WAN Miniport (PPPOE)
+Status                      : 
+StatusInfo                  : 
+DeviceID                    : 10
+AdapterType                 : 
+AdapterTypeId               : 
+AutoSense                   : 
+Caption                     : [00000010] WAN Miniport (PPPOE)
+ConfigManagerErrorCode      : 0
+ConfigManagerUserConfig     : False
+CreationClassName           : Win32_NetworkAdapter
+Description                 : WAN Miniport (PPPOE)
+ErrorCleared                : 
+ErrorDescription            : 
+GUID                        : 
+Index                       : 10
+InstallDate                 : 
+Installed                   : True
+InterfaceIndex              : 14
+LastErrorCode               : 
+MACAddress                  : 
+Manufacturer                : Microsoft
+MaxNumberControlled         : 0
+MaxSpeed                    : 
+NetConnectionID             : 
+NetConnectionStatus         : 
+NetEnabled                  : 
+NetworkAddresses            : 
+PermanentAddress            : 
+PhysicalAdapter             : False
+PNPDeviceID                 : SWD\MSRRAS\MS_PPPOEMINIPORT
+PowerManagementCapabilities : 
+PowerManagementSupported    : False
+ProductName                 : WAN Miniport (PPPOE)
+ServiceName                 : RasPppoe
+Speed                       : 
+SystemCreationClassName     : Win32_ComputerSystem
+SystemName                  : 5CD04794WV
+TimeOfLastReset             : 20240727071515.500000+240
+
+Availability                : 3
+Name                        : WAN Miniport (IP)
+Status                      : 
+StatusInfo                  : 
+DeviceID                    : 11
+AdapterType                 : Ethernet 802.3
+AdapterTypeId               : 0
+AutoSense                   : 
+Caption                     : [00000011] WAN Miniport (IP)
+ConfigManagerErrorCode      : 0
+ConfigManagerUserConfig     : False
+CreationClassName           : Win32_NetworkAdapter
+Description                 : WAN Miniport (IP)
+ErrorCleared                : 
+ErrorDescription            : 
+GUID                        : 
+Index                       : 11
+InstallDate                 : 
+Installed                   : True
+InterfaceIndex              : 4
+LastErrorCode               : 
+MACAddress                  : F2:C8:20:52:41:53
+Manufacturer                : Microsoft
+MaxNumberControlled         : 0
+MaxSpeed                    : 
+NetConnectionID             : 
+NetConnectionStatus         : 
+NetEnabled                  : 
+NetworkAddresses            : 
+PermanentAddress            : 
+PhysicalAdapter             : False
+PNPDeviceID                 : SWD\MSRRAS\MS_NDISWANIP
+PowerManagementCapabilities : 
+PowerManagementSupported    : False
+ProductName                 : WAN Miniport (IP)
+ServiceName                 : NdisWan
+Speed                       : 
+SystemCreationClassName     : Win32_ComputerSystem
+SystemName                  : 5CD04794WV
+TimeOfLastReset             : 20240727071515.500000+240
+
+Availability                : 3
+Name                        : WAN Miniport (IPv6)
+Status                      : 
+StatusInfo                  : 
+DeviceID                    : 12
+AdapterType                 : Ethernet 802.3
+AdapterTypeId               : 0
+AutoSense                   : 
+Caption                     : [00000012] WAN Miniport (IPv6)
+ConfigManagerErrorCode      : 0
+ConfigManagerUserConfig     : False
+CreationClassName           : Win32_NetworkAdapter
+Description                 : WAN Miniport (IPv6)
+ErrorCleared                : 
+ErrorDescription            : 
+GUID                        : 
+Index                       : 12
+InstallDate                 : 
+Installed                   : True
+InterfaceIndex              : 2
+LastErrorCode               : 
+MACAddress                  : 02:60:20:52:41:53
+Manufacturer                : Microsoft
+MaxNumberControlled         : 0
+MaxSpeed                    : 
+NetConnectionID             : 
+NetConnectionStatus         : 
+NetEnabled                  : 
+NetworkAddresses            : 
+PermanentAddress            : 
+PhysicalAdapter             : False
+PNPDeviceID                 : SWD\MSRRAS\MS_NDISWANIPV6
+PowerManagementCapabilities : 
+PowerManagementSupported    : False
+ProductName                 : WAN Miniport (IPv6)
+ServiceName                 : NdisWan
+Speed                       : 
+SystemCreationClassName     : Win32_ComputerSystem
+SystemName                  : 5CD04794WV
+TimeOfLastReset             : 20240727071515.500000+240
+
+Availability                : 3
+Name                        : WAN Miniport (Network Monitor)
+Status                      : 
+StatusInfo                  : 
+DeviceID                    : 13
+AdapterType                 : Ethernet 802.3
+AdapterTypeId               : 0
+AutoSense                   : 
+Caption                     : [00000013] WAN Miniport (Network Monitor)
+ConfigManagerErrorCode      : 0
+ConfigManagerUserConfig     : False
+CreationClassName           : Win32_NetworkAdapter
+Description                 : WAN Miniport (Network Monitor)
+ErrorCleared                : 
+ErrorDescription            : 
+GUID                        : 
+Index                       : 13
+InstallDate                 : 
+Installed                   : True
+InterfaceIndex              : 7
+LastErrorCode               : 
+MACAddress                  : 0E:5A:20:52:41:53
+Manufacturer                : Microsoft
+MaxNumberControlled         : 0
+MaxSpeed                    : 
+NetConnectionID             : 
+NetConnectionStatus         : 
+NetEnabled                  : 
+NetworkAddresses            : 
+PermanentAddress            : 
+PhysicalAdapter             : False
+PNPDeviceID                 : SWD\MSRRAS\MS_NDISWANBH
+PowerManagementCapabilities : 
+PowerManagementSupported    : False
+ProductName                 : WAN Miniport (Network Monitor)
+ServiceName                 : NdisWan
+Speed                       : 
+SystemCreationClassName     : Win32_ComputerSystem
+SystemName                  : 5CD04794WV
+TimeOfLastReset             : 20240727071515.500000+240
+
+Availability                : 3
+Name                        : Hyper-V Virtual Ethernet Adapter
+Status                      : 
+StatusInfo                  : 
+DeviceID                    : 14
+AdapterType                 : Ethernet 802.3
+AdapterTypeId               : 0
+AutoSense                   : 
+Caption                     : [00000014] Hyper-V Virtual Ethernet Adapter
+ConfigManagerErrorCode      : 0
+ConfigManagerUserConfig     : False
+CreationClassName           : Win32_NetworkAdapter
+Description                 : Hyper-V Virtual Ethernet Adapter
+ErrorCleared                : 
+ErrorDescription            : 
+GUID                        : {EA9F474A-449B-4444-8C56-FA2238215056}
+Index                       : 14
+InstallDate                 : 
+Installed                   : True
+InterfaceIndex              : 34
+LastErrorCode               : 
+MACAddress                  : 00:15:5D:9D:8D:9D
+Manufacturer                : Microsoft
+MaxNumberControlled         : 0
+MaxSpeed                    : 
+NetConnectionID             : vEthernet (Default Switch)
+NetConnectionStatus         : 2
+NetEnabled                  : True
+NetworkAddresses            : 
+PermanentAddress            : 
+PhysicalAdapter             : True
+PNPDeviceID                 : ROOT\VMS_MP\0000
+PowerManagementCapabilities : 
+PowerManagementSupported    : False
+ProductName                 : Hyper-V Virtual Ethernet Adapter
+ServiceName                 : VMSNPXYMP
+Speed                       : 10000000000
+SystemCreationClassName     : Win32_ComputerSystem
+SystemName                  : 5CD04794WV
+TimeOfLastReset             : 20240727071515.500000+240
+
+Availability                : 3
+Name                        : RAS Async Adapter
+Status                      : 
+StatusInfo                  : 
+DeviceID                    : 15
+AdapterType                 : 
+AdapterTypeId               : 
+AutoSense                   : 
+Caption                     : [00000015] RAS Async Adapter
+ConfigManagerErrorCode      : 
+ConfigManagerUserConfig     : 
+CreationClassName           : Win32_NetworkAdapter
+Description                 : RAS Async Adapter
+ErrorCleared                : 
+ErrorDescription            : 
+GUID                        : 
+Index                       : 15
+InstallDate                 : 
+Installed                   : True
+InterfaceIndex              : 15
+LastErrorCode               : 
+MACAddress                  : 
+Manufacturer                : 
+MaxNumberControlled         : 0
+MaxSpeed                    : 
+NetConnectionID             : 
+NetConnectionStatus         : 
+NetEnabled                  : 
+NetworkAddresses            : 
+PermanentAddress            : 
+PhysicalAdapter             : False
+PNPDeviceID                 : 
+PowerManagementCapabilities : 
+PowerManagementSupported    : False
+ProductName                 : RAS Async Adapter
+ServiceName                 : 
+Speed                       : 
+SystemCreationClassName     : Win32_ComputerSystem
+SystemName                  : 5CD04794WV
+TimeOfLastReset             : 20240727071515.500000+240
+
+Availability                : 3
+Name                        : TAP-Windows Adapter V9 for OpenVPN Connect
+Status                      : 
+StatusInfo                  : 
+DeviceID                    : 16
+AdapterType                 : Ethernet 802.3
+AdapterTypeId               : 0
+AutoSense                   : 
+Caption                     : [00000016] TAP-Windows Adapter V9 for OpenVPN Connect
+ConfigManagerErrorCode      : 0
+ConfigManagerUserConfig     : False
+CreationClassName           : Win32_NetworkAdapter
+Description                 : TAP-Windows Adapter V9 for OpenVPN Connect
+ErrorCleared                : 
+ErrorDescription            : 
+GUID                        : {7D50BB2D-D69F-48F3-A574-49E1A8316081}
+Index                       : 16
+InstallDate                 : 
+Installed                   : True
+InterfaceIndex              : 17
+LastErrorCode               : 
+MACAddress                  : 00:FF:7D:50:BB:2D
+Manufacturer                : TAP-Windows Provider V9 for OpenVPN Connect
+MaxNumberControlled         : 0
+MaxSpeed                    : 
+NetConnectionID             : Local Area Connection
+NetConnectionStatus         : 7
+NetEnabled                  : False
+NetworkAddresses            : 
+PermanentAddress            : 
+PhysicalAdapter             : True
+PNPDeviceID                 : ROOT\NET\0000
+PowerManagementCapabilities : 
+PowerManagementSupported    : False
+ProductName                 : TAP-Windows Adapter V9 for OpenVPN Connect
+ServiceName                 : tap_ovpnconnect
+Speed                       : 1000000000
+SystemCreationClassName     : Win32_ComputerSystem
+SystemName                  : 5CD04794WV
+TimeOfLastReset             : 20240727071515.500000+240
+
+Availability                : 3
+Name                        : OpenVPN Data Channel Offload
+Status                      : 
+StatusInfo                  : 
+DeviceID                    : 17
+AdapterType                 : 
+AdapterTypeId               : 
+AutoSense                   : 
+Caption                     : [00000017] OpenVPN Data Channel Offload
+ConfigManagerErrorCode      : 0
+ConfigManagerUserConfig     : False
+CreationClassName           : Win32_NetworkAdapter
+Description                 : OpenVPN Data Channel Offload
+ErrorCleared                : 
+ErrorDescription            : 
+GUID                        : {101CB5FD-2033-45B7-AB78-BCFE7C91AB66}
+Index                       : 17
+InstallDate                 : 
+Installed                   : True
+InterfaceIndex              : 5
+LastErrorCode               : 
+MACAddress                  : 
+Manufacturer                : OpenVPN, Inc
+MaxNumberControlled         : 0
+MaxSpeed                    : 
+NetConnectionID             : OpenVPN Connect DCO Adapter
+NetConnectionStatus         : 7
+NetEnabled                  : False
+NetworkAddresses            : 
+PermanentAddress            : 
+PhysicalAdapter             : True
+PNPDeviceID                 : ROOT\NET\0001
+PowerManagementCapabilities : 
+PowerManagementSupported    : False
+ProductName                 : OpenVPN Data Channel Offload
+ServiceName                 : ovpn-dco
+Speed                       : 1000000000
+SystemCreationClassName     : Win32_ComputerSystem
+SystemName                  : 5CD04794WV
+TimeOfLastReset             : 20240727071515.500000+240
+
+Availability                : 3
+Name                        : Hyper-V Virtual Switch Extension Adapter
+Status                      : 
+StatusInfo                  : 
+DeviceID                    : 18
+AdapterType                 : Ethernet 802.3
+AdapterTypeId               : 0
+AutoSense                   : 
+Caption                     : [00000018] Hyper-V Virtual Switch Extension Adapter
+ConfigManagerErrorCode      : 0
+ConfigManagerUserConfig     : False
+CreationClassName           : Win32_NetworkAdapter
+Description                 : Hyper-V Virtual Switch Extension Adapter
+ErrorCleared                : 
+ErrorDescription            : 
+GUID                        : 
+Index                       : 18
+InstallDate                 : 
+Installed                   : True
+InterfaceIndex              : 6
+LastErrorCode               : 
+MACAddress                  : 
+Manufacturer                : Microsoft
+MaxNumberControlled         : 0
+MaxSpeed                    : 
+NetConnectionID             : 
+NetConnectionStatus         : 
+NetEnabled                  : 
+NetworkAddresses            : 
+PermanentAddress            : 
+PhysicalAdapter             : False
+PNPDeviceID                 : ROOT\VMS_VSMP\0002
+PowerManagementCapabilities : 
+PowerManagementSupported    : False
+ProductName                 : Hyper-V Virtual Switch Extension Adapter
+ServiceName                 : VMSMP
+Speed                       : 
+SystemCreationClassName     : Win32_ComputerSystem
+SystemName                  : 5CD04794WV
+TimeOfLastReset             : 20240727071515.500000+240
+
+Availability                : 3
+Name                        : Remote NDIS based Internet Sharing Device
+Status                      : 
+StatusInfo                  : 
+DeviceID                    : 19
+AdapterType                 : 
+AdapterTypeId               : 
+AutoSense                   : 
+Caption                     : [00000019] Remote NDIS based Internet Sharing Device
+ConfigManagerErrorCode      : 
+ConfigManagerUserConfig     : 
+CreationClassName           : Win32_NetworkAdapter
+Description                 : Remote NDIS based Internet Sharing Device
+ErrorCleared                : 
+ErrorDescription            : 
+GUID                        : 
+Index                       : 19
+InstallDate                 : 
+Installed                   : True
+InterfaceIndex              : 10
+LastErrorCode               : 
+MACAddress                  : 
+Manufacturer                : 
+MaxNumberControlled         : 0
+MaxSpeed                    : 
+NetConnectionID             : 
+NetConnectionStatus         : 
+NetEnabled                  : 
+NetworkAddresses            : 
+PermanentAddress            : 
+PhysicalAdapter             : False
+PNPDeviceID                 : 
+PowerManagementCapabilities : 
+PowerManagementSupported    : False
+ProductName                 : Remote NDIS based Internet Sharing Device
+ServiceName                 : 
+Speed                       : 
+SystemCreationClassName     : Win32_ComputerSystem
+SystemName                  : 5CD04794WV
+TimeOfLastReset             : 20240727071515.500000+240
+
+Availability                : 3
+Name                        : Hyper-V Virtual Ethernet Adapter #3
+Status                      : 
+StatusInfo                  : 
+DeviceID                    : 20
+AdapterType                 : Ethernet 802.3
+AdapterTypeId               : 0
+AutoSense                   : 
+Caption                     : [00000020] Hyper-V Virtual Ethernet Adapter
+ConfigManagerErrorCode      : 0
+ConfigManagerUserConfig     : False
+CreationClassName           : Win32_NetworkAdapter
+Description                 : Hyper-V Virtual Ethernet Adapter
+ErrorCleared                : 
+ErrorDescription            : 
+GUID                        : {788F0FDF-C3AC-48EE-A657-60FC08AE4133}
+Index                       : 20
+InstallDate                 : 
+Installed                   : True
+InterfaceIndex              : 16
+LastErrorCode               : 
+MACAddress                  : 36:0C:C2:75:11:62
+Manufacturer                : Microsoft
+MaxNumberControlled         : 0
+MaxSpeed                    : 
+NetConnectionID             : vEthernet (External)
+NetConnectionStatus         : 7
+NetEnabled                  : False
+NetworkAddresses            : 
+PermanentAddress            : 
+PhysicalAdapter             : True
+PNPDeviceID                 : ROOT\VMS_MP\0002
+PowerManagementCapabilities : 
+PowerManagementSupported    : False
+ProductName                 : Hyper-V Virtual Ethernet Adapter
+ServiceName                 : VMSNPXYMP
+Speed                       : 0
+SystemCreationClassName     : Win32_ComputerSystem
+SystemName                  : 5CD04794WV
+TimeOfLastReset             : 20240727071515.500000+240
+
+Availability                : 3
+Name                        : Bluetooth Device (Personal Area Network)
+Status                      : 
+StatusInfo                  : 
+DeviceID                    : 23
+AdapterType                 : Ethernet 802.3
+AdapterTypeId               : 0
+AutoSense                   : 
+Caption                     : [00000023] Bluetooth Device (Personal Area Network)
+ConfigManagerErrorCode      : 0
+ConfigManagerUserConfig     : False
+CreationClassName           : Win32_NetworkAdapter
+Description                 : Bluetooth Device (Personal Area Network)
+ErrorCleared                : 
+ErrorDescription            : 
+GUID                        : {D2327921-42F3-4C6B-94DC-3F9B8659FE30}
+Index                       : 23
+InstallDate                 : 
+Installed                   : True
+InterfaceIndex              : 25
+LastErrorCode               : 
+MACAddress                  : DC:41:A9:D2:69:72
+Manufacturer                : Microsoft
+MaxNumberControlled         : 0
+MaxSpeed                    : 
+NetConnectionID             : Bluetooth Network Connection
+NetConnectionStatus         : 7
+NetEnabled                  : False
+NetworkAddresses            : 
+PermanentAddress            : 
+PhysicalAdapter             : True
+PNPDeviceID                 : BTH\MS_BTHPAN\6&604E8D&0&2
+PowerManagementCapabilities : 
+PowerManagementSupported    : False
+ProductName                 : Bluetooth Device (Personal Area Network)
+ServiceName                 : BthPan
+Speed                       : 3000000
+SystemCreationClassName     : Win32_ComputerSystem
+SystemName                  : 5CD04794WV
+TimeOfLastReset             : 20240727071515.500000+240
+
+
 

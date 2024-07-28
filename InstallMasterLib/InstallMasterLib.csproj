@@ -43,8 +43,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Device.cs" />
+    <Compile Include="Memory.cs" />
     <Compile Include="Motherboard.cs" />
     <Compile Include="HelperFunctions.cs" />
+    <Compile Include="NIC.cs" />
+    <Compile Include="Storage.cs" />
     <Compile Include="WMIQuery.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
