@@ -28,6 +28,13 @@ namespace InstallMasterConsole
 
             var memoryManager = new MemoryManager();
 
+            var storageManager = new StorageManager();
+
+            Console.WriteLine("******************************\n");
+            Console.WriteLine("Storage Information");
+            //HelperFunctions.DisplayObjectProperties(networkAdapterManager);
+            storageManager.StorageInfo();
+
             Console.WriteLine("******************************\n");
             Console.WriteLine("NIC Information");
             //HelperFunctions.DisplayObjectProperties(networkAdapterManager);
