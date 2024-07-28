@@ -15,38 +15,26 @@ namespace InstallMasterConsole
 	{
 		static void Main(string[] args)
 		{
-			#region Test the Motherboard class
-			/*
-			var motherboard = new Motherboard();            
-            var motherboardDetails = motherboard.GetMBProps();
-			Console.WriteLine("***MotherBoard Details***\n");
-			foreach (var compdetail in motherboardDetails) {Console.WriteLine($"{compdetail.Key}: {compdetail.Value}");}
-            */
-			#endregion
+            
 
-			#region Test the Computer class
-			/*
-			var computer = new Computer();
-			var computerDetails = computer.GetCompProps();
-			Console.WriteLine("***Computer Details***\n");
-			foreach (var compdetail in computerDetails) { Console.WriteLine($"{compdetail.Key}: {compdetail.Value}"); }
-			*/
-			#endregion
+            Device mycomputer = new Device();
+            mycomputer.ComputerInfo();
 
-			#region Test the Memory Class
-			/*
-			RAM ram = new RAM();
-			var memoryInfoList = ram.GetRAMProps();
-			Console.WriteLine("***RAM Details***\n");
-			foreach (var ramdetail in memoryInfoList) { Console.WriteLine($"{ramdetail.Key}: {ramdetail.Value}"); }
-			*/
-			#endregion
+            Motherboard mymotherboard = new Motherboard();
+			mymotherboard.MotherboardInfo();
 
-			Computer mycomputer = new Computer();
 
-			mycomputer.ComputerInfo();
+            Console.WriteLine("******************************\n");
+            Console.WriteLine("Computer Information");
+            HelperFunctions.DisplayObjectProperties(mycomputer);
+            
+            Console.WriteLine("******************************\n");
+            Console.WriteLine("MotherBoard Information");
+            HelperFunctions.DisplayObjectProperties(mymotherboard);
 
-			Console.ReadLine();
+            Console.WriteLine("******************************\n");
+
+            Console.ReadLine();
 		}
 	}
 }

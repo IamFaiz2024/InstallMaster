@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Diagnostics.Eventing.Reader;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -148,10 +149,10 @@ namespace InstallMasterLib
 
 			return HostDictionary;
 		}
-		#endregion
+        #endregion
 
-		#region Getting WMI Results from ManagementObjectSearcher /**/ 
-		/*
+        #region Getting WMI Results from ManagementObjectSearcher /**/ 
+        /*
 			ManagementObjectSearcher searcher = new ManagementObjectSearcher("SELECT * FROM Win32_PhysicalMemory");
 			// Iterate over the results and print the properties
 			foreach (ManagementObject obj in searcher.Get())
@@ -163,7 +164,21 @@ namespace InstallMasterLib
 				}
 			}
 			*/
-		#endregion
+        #endregion
 
-	}
+        #region Display all Properties of Class
+        public static void DisplayObjectProperties(object obj)
+        {
+            Type type = obj.GetType();
+            PropertyInfo[] properties = type.GetProperties();
+
+            foreach (PropertyInfo property in properties)
+            {
+                object value = property.GetValue(obj, null);
+                Console.WriteLine($"{property.Name}: {value}");
+            }
+        }
+        #endregion
+
+    }
 }

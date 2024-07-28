@@ -42,14 +42,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Computer.cs" />
-    <Compile Include="RND\ComputerClass.cs" />
+    <Compile Include="Device.cs" />
+    <Compile Include="Motherboard.cs" />
     <Compile Include="HelperFunctions.cs" />
-    <Compile Include="RND\RAM.cs" />
-    <Compile Include="RND\Motherboard.cs" />
-    <Compile Include="RND\NetworkCard.cs" />
-    <Compile Include="RND\Storage.cs" />
-    <Compile Include="RND\WMIQuery.cs" />
+    <Compile Include="WMIQuery.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

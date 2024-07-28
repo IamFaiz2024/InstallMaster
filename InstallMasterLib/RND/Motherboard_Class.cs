@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace InstallMasterLib
 {
-	public class Motherboard
+	public class Motherboard_Class
 	{		
 		public Dictionary<string, object> GetMBProps()
 		{
