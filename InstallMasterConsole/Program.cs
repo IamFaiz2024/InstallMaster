@@ -30,6 +30,8 @@ namespace InstallMasterConsole
 
             var storageManager = new StorageManager();
 
+            var cpuManager = new CPUManager();
+
             Console.WriteLine("******************************\n");
             Console.WriteLine("Storage Information");
             //HelperFunctions.DisplayObjectProperties(networkAdapterManager);
@@ -54,7 +56,12 @@ namespace InstallMasterConsole
             Console.WriteLine("MotherBoard Information");
             HelperFunctions.DisplayObjectProperties(mymotherboard);
 
-            Console.WriteLine("******************************\n");
+			Console.WriteLine("******************************\n");
+			Console.WriteLine("CPU Information");
+			//HelperFunctions.DisplayObjectProperties(networkAdapterManager);
+			cpuManager.CPUInfo();
+
+			Console.WriteLine("******************************\n");
 
             Console.ReadLine();
 		}

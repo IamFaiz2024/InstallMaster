@@ -13,6 +13,7 @@ namespace InstallMasterLib
     public class Device
     {
         public string SerialNumber { get; set; } = "Unknown";
+		public string CurrentBIOSVersion { get; set; }
         public string Manufacturer { get; set; }
         public string Model { get; set; }
         public string ModelYear { get; set; }
@@ -25,18 +26,27 @@ namespace InstallMasterLib
             WMIQuery wmiquery = new WMIQuery();
             this.Category = "Computer";
 
-            var wmiProperties = wmiquery.ExecuteWMIQuery("SELECT * FROM CIM_ComputerSystem");
+			var wmiProperties = wmiquery.ExecuteWMIQuery("SELECT * FROM Win32_BIOS");
+			foreach (var PropDict in wmiProperties)
+			{
+				if (PropDict.TryGetValue("SMBIOSBIOSVersion", out var biosversion))
+				{
+					this.CurrentBIOSVersion = biosversion?.ToString() ?? "Unknown";
+				}
+
+				if (PropDict.TryGetValue("SerialNumber", out var biosSerialNumber))
+				{
+					this.SerialNumber = HelperFunctions.CleanString(biosSerialNumber);
+					break; // We found the serial number, no need to check Win32_BaseBoard
+				}
+			}		
+
+			wmiProperties = wmiquery.ExecuteWMIQuery("SELECT * FROM CIM_ComputerSystem");
             foreach (var PropDict in wmiProperties)
             {
-                /*
-                if (PropDict.TryGetValue("Name", out var name))
+				if (PropDict.TryGetValue("Description", out var description))
                 {
-                    this.SerialNumber = name?.ToString() ?? "Unknown";
-                }
-                */
-                if (PropDict.TryGetValue("Description", out var description))
-                {
-                    this.DeviceType = description?.ToString() ?? "Unknown";
+                    this.DeviceType = HelperFunctions.CleanString(description);
                 }
                 if (PropDict.TryGetValue("SystemSKUNumber", out var partno))
                 {
@@ -44,26 +54,13 @@ namespace InstallMasterLib
                 }
                 if (PropDict.TryGetValue("Manufacturer", out var manufacturer))
                 {
-                    this.Manufacturer = manufacturer?.ToString() ?? "Unknown";
+                    this.Manufacturer = HelperFunctions.CleanString(manufacturer);
                 }
                 if (PropDict.TryGetValue("Model", out var model))
                 {
-                    this.Model = model?.ToString() ?? "Unknown";
+                    this.Model = HelperFunctions.CleanString(model);
                 }
-            }
-
-            if (this.SerialNumber.Length <= 2 || this.SerialNumber == "Unknown")
-            {
-                wmiProperties = wmiquery.ExecuteWMIQuery("SELECT * FROM Win32_BIOS");
-                foreach (var PropDict in wmiProperties)
-                {
-                    if (PropDict.TryGetValue("SerialNumber", out var biosSerialNumber))
-                    {
-                        this.SerialNumber = biosSerialNumber?.ToString() ?? "Unknown";
-                        break; // We found the serial number, no need to check Win32_BaseBoard
-                    }
-                }
-            }
+            }            
 
             if (this.SerialNumber.Length <= 2 || this.SerialNumber == "Unknown")
             {
@@ -72,16 +69,11 @@ namespace InstallMasterLib
                 {
                     if (PropDict.TryGetValue("SerialNumber", out var mbbSerialNumber))
                     {
-                        this.SerialNumber = mbbSerialNumber?.ToString() ?? "Unknown";
+                        this.SerialNumber = HelperFunctions.CleanString(mbbSerialNumber);
                         break; // We found the serial number, no need to check Win32_BaseBoard
                     }
                 }
-            }
-
-            if (this.SerialNumber.Length <= 2 || this.SerialNumber == "Unknown")
-            {
-                this.SerialNumber=this.PartNumber?.ToString() ?? "Unknown";
-            }
+            }            
         }
     }
 }

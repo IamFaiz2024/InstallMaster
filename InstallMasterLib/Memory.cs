@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Management;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
@@ -37,28 +38,28 @@ namespace InstallMasterLib
 
                 if (PropDict.TryGetValue("SerialNumber", out var serialnumber))
                 {
-                    mem.SerialNumber = serialnumber?.ToString() ?? "Unknown";
+                    mem.SerialNumber = HelperFunctions.CleanString(serialnumber); ;
                 }
                 if (PropDict.TryGetValue("Model", out var model))
                 {
-                    mem.Model = model?.ToString() ?? "Unknown";
+                    mem.Model = HelperFunctions.CleanString(model); ;
                 }
                 if (PropDict.TryGetValue("Manufacturer", out var manufacturer))
                 {
-                    mem.Manufacturer = manufacturer?.ToString() ?? "Unknown";
+                    mem.Manufacturer = HelperFunctions.CleanString(manufacturer); 
                 }
                 if (PropDict.TryGetValue("PartNumber", out var partnumber))
-                {
-                    mem.PartNumber = partnumber?.ToString() ?? "Unknown";
-                }
+				{
+					mem.PartNumber = partnumber?.ToString() ?? "Unknown";//HelperFunctions.CleanString(partnumber);
+				}
                 if (PropDict.TryGetValue("Capacity", out var capacity))
                 {
-                    mem.Capacity = capacity?.ToString() ?? "Unknown";
-                }
+                    mem.Capacity = HelperFunctions.CleanString(capacity);
+				}
                 if (PropDict.TryGetValue("ConfiguredClockSpeed", out var configuredclockspeed))
                 {
-                    mem.Speed = configuredclockspeed?.ToString() ?? "Unknown";
-                }
+                    mem.Speed = HelperFunctions.CleanString(configuredclockspeed);
+				}
 
                 Device computerDevice = new Device();
                 computerDevice.ComputerInfo();
@@ -66,7 +67,6 @@ namespace InstallMasterLib
 
                 this.MEMs.Add(mem);
             }
-
             // Expose the Memory properties individually
             foreach (var mem in MEMs)
             {

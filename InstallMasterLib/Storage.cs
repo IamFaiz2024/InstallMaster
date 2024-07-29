@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace InstallMasterLib
@@ -36,31 +37,33 @@ namespace InstallMasterLib
 
                 if (PropDict.TryGetValue("SerialNumber", out var serialnumber))
                 {
-                    storage.SerialNumber = serialnumber?.ToString() ?? "Unknown";
+                    storage.SerialNumber = HelperFunctions.CleanString(serialnumber);
                 }
                 if (PropDict.TryGetValue("Model", out var model))
                 {
-                    storage.Model = model?.ToString() ?? "Unknown";
+                    storage.Model = HelperFunctions.CleanString(model);
                 }
                 if (PropDict.TryGetValue("Manufacturer", out var manufacturer))
                 {
-                    storage.Manufacturer = manufacturer?.ToString() ?? "Unknown";
-                }
+					storage.Manufacturer = HelperFunctions.CleanString(manufacturer);
+					//storage.Manufacturer = manufacturer?.ToString() ?? "Unknown";
+				}
                 if (PropDict.TryGetValue("DeviceID", out var deviceid))
                 {
-                    storage.DeviceID = deviceid?.ToString() ?? "Unknown";
-                }
+					storage.DeviceID = HelperFunctions.CleanString(deviceid);
+					//storage.DeviceID = deviceid?.ToString() ?? "Unknown"; //deviceid?.ToString() ?? "Unknown";
+				}
                 if (PropDict.TryGetValue("MediaType", out var mediatype))
                 {
-                    storage.MediaType = mediatype?.ToString() ?? "Unknown";
+                    storage.MediaType = HelperFunctions.CleanString(mediatype);
                 }
                 if (PropDict.TryGetValue("Size", out var capacity))
                 {
-                    storage.Capacity = capacity?.ToString() ?? "Unknown";
+                    storage.Capacity = HelperFunctions.CleanString(capacity);
                 }
                 if (PropDict.TryGetValue("InterfaceType", out var interfacetype))
                 {
-                    storage.InterfaceType = interfacetype?.ToString() ?? "Unknown";
+                    storage.InterfaceType = HelperFunctions.CleanString(interfacetype);
                 }
 
                 Device computerDevice = new Device();

@@ -52,15 +52,15 @@ namespace InstallMasterLib
                     }
                     if (PropDict.TryGetValue("Description", out var description))
                     {
-                        nic.Model = description?.ToString() ?? "Unknown";
+                        nic.Model = HelperFunctions.CleanString(description);
                     }
                     if (PropDict.TryGetValue("Manufacturer", out var manufacturer))
                     {
-                        nic.Manufacturer = manufacturer?.ToString() ?? "Unknown";
+                        nic.Manufacturer = HelperFunctions.CleanString(manufacturer);
                     }
                     if (PropDict.TryGetValue("NetConnectionID", out var netconnectionid))
                     {
-                        nic.ConnectionType = netconnectionid?.ToString() ?? "Unknown";
+                        nic.ConnectionType = HelperFunctions.CleanString(netconnectionid);
                     }
 
                     Device computerDevice = new Device();

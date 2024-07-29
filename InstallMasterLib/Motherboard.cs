@@ -30,22 +30,22 @@ namespace InstallMasterLib
             {
                 if (PropDict.TryGetValue("SerialNumber", out var srno))
                 {
-                    this.SerialNumber = srno?.ToString() ?? "Unknown";
+                    this.SerialNumber = HelperFunctions.CleanString(srno);
                 }
 
                 if (PropDict.TryGetValue("Model", out var model))
                 {
-                    this.Model = model?.ToString() ?? "Unknown";
+                    this.Model = HelperFunctions.CleanString(model);
                 }
 
                 if (PropDict.TryGetValue("Product", out var product))
                 {
-                    this.Product = product?.ToString() ?? "Unknown";
+                    this.Product = HelperFunctions.CleanString(product);
                 }
 
                 if (PropDict.TryGetValue("Manufacturer", out var manufacturer))
                 {
-                    this.Manufacturer = manufacturer?.ToString() ?? "Unknown";
+                    this.Manufacturer = HelperFunctions.CleanString(manufacturer);
                 }
             }
             Device computerDevice = new Device();
@@ -58,7 +58,7 @@ namespace InstallMasterLib
             {
                 if (PropDict.TryGetValue("SMBIOSBIOSVersion", out var biosversion))
                 {
-                    this.BIOSVersion = biosversion?.ToString() ?? "Unknown";
+                    this.BIOSVersion = HelperFunctions.CleanString(biosversion);
                 }
             }
 

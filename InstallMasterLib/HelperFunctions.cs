@@ -7,6 +7,7 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+using System.Text.RegularExpressions;
 
 namespace InstallMasterLib
 {
@@ -178,7 +179,24 @@ namespace InstallMasterLib
                 Console.WriteLine($"{property.Name}: {value}");
             }
         }
-        #endregion
+		#endregion
 
-    }
+		#region Clean the String
+		public static string CleanString(object managementObject)
+		{
+			string targetString = managementObject?.ToString() ?? "Unknown";
+			// Remove the "\\.\" prefix
+			string cleanString = Regex.Replace(targetString, @"^\\.\\", "");
+
+			// Remove all non-alphanumeric characters
+			cleanString = Regex.Replace(cleanString, @"[^a-zA-Z0-9]", " ");
+
+			// Replace double blank spaces with single blank spaces
+			cleanString = Regex.Replace(cleanString, @"\s+", " ");
+
+			return cleanString.Trim();
+		}
+		#endregion
+
+	}
 }
