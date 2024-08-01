@@ -3,24 +3,34 @@ GO
 
 /****** Object:  Table [dbo].[Device]    Script Date: 7/31/2024 11:07:12 AM ******/
 
-DROP TABLE [dbo].[Cpu]
-DROP TABLE [dbo].[Device]
-DROP TABLE [dbo].[Memory]
-DROP TABLE [dbo].[Motherboard]
-DROP TABLE [dbo].[Networkcard]
-DROP TABLE [dbo].[Storage]
-DROP SEQUENCE [dbo].[CpuIDSequence]
-DROP SEQUENCE [dbo].[DeviceIDSequence]
-DROP SEQUENCE [dbo].[MemoryIDSequence]
-DROP SEQUENCE [dbo].[MotherboardIDSequence]
-DROP SEQUENCE [dbo].[NetworkcardIDSequence]
-DROP SEQUENCE [dbo].[StrorageIDSequence]
-DROP TRIGGER [dbo].[GenerateDeviceID]
-DROP TRIGGER [dbo].[GenerateCpuID]
-DROP TRIGGER [dbo].[GenerateMemoryID]
-DROP TRIGGER [dbo].[GenerateMotherboardID]
-DROP TRIGGER [dbo].[GenerateNetworkcardID]
-DROP TRIGGER [dbo].[GenerateStorageID]
-GO
+SET XACT_ABORT OFF;
 
 
+DECLARE @sql NVARCHAR(MAX) = '';
+
+-- Drop all user tables
+SELECT @sql += 'DROP TABLE ' + QUOTENAME(TABLE_SCHEMA) + '.' + QUOTENAME(TABLE_NAME) + ';' + CHAR(13)
+FROM INFORMATION_SCHEMA.TABLES
+WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_SCHEMA = 'dbo' AND OBJECTPROPERTY(OBJECT_ID(QUOTENAME(TABLE_SCHEMA) + '.' + QUOTENAME(TABLE_NAME)), 'IsMSShipped') = 0;
+
+-- Drop all stored procedures
+SELECT @sql += 'DROP PROCEDURE ' + QUOTENAME(ROUTINE_SCHEMA) + '.' + QUOTENAME(ROUTINE_NAME) + ';' + CHAR(13)
+FROM INFORMATION_SCHEMA.ROUTINES
+WHERE ROUTINE_TYPE = 'PROCEDURE' AND ROUTINE_SCHEMA = 'dbo';
+
+-- Drop all views
+SELECT @sql += 'DROP VIEW ' + QUOTENAME(TABLE_SCHEMA) + '.' + QUOTENAME(TABLE_NAME) + ';' + CHAR(13)
+FROM INFORMATION_SCHEMA.VIEWS
+WHERE TABLE_SCHEMA = 'dbo';
+
+-- Drop all functions
+SELECT @sql += 'DROP FUNCTION ' + QUOTENAME(ROUTINE_SCHEMA) + '.' + QUOTENAME(ROUTINE_NAME) + ';' + CHAR(13)
+FROM INFORMATION_SCHEMA.ROUTINES
+WHERE ROUTINE_TYPE = 'FUNCTION' AND ROUTINE_SCHEMA = 'dbo';
+
+-- Drop all sequences
+SELECT @sql += 'DROP SEQUENCE ' + QUOTENAME(name) + ';' + CHAR(13)
+FROM sys.sequences
+WHERE SCHEMA_NAME(schema_id) = 'dbo';
+
+EXEC sp_executesql @sql;
