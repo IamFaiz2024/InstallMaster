@@ -39,19 +39,47 @@ class NetworkChecker {
 
 		# Write-Output "Failed to connect to $hostName after 3 retries."
 		return $false  # Connection failed after retries
-	}	
+	}
+
+	[bool] CheckConnectionToHost([string]$hostName, [int]$port) {
+        try {
+            $client = New-Object System.Net.Sockets.TcpClient
+            $client.Connect($hostName, $port)
+            
+            if ($client.Connected) {
+                Write-Output "Connection to $hostName on port $port successful."
+                $client.Close()
+                return $true
+            } else {
+                Write-Output "Failed to connect to $hostName on port $port."
+                $client.Close()
+                return $false
+            }
+        } catch {
+            Write-Output "Error occurred while trying to connect to $hostName on port $port : $_"
+            return $false
+        }
+    }
 }
 
-
-
-<#
+#<#
 # Create an instance of the NetworkChecker class
 $networkChecker = [NetworkChecker]::new()
 
 # Test connection with retry prompt
-$hostToCheck = "155.168.2.255"
-$connectionResult = $networkChecker.CheckConnectionWithRetryPrompt($hostToCheck)
+#$hostToCheck = "localhost"
+#$connectionResult = $networkChecker.CheckConnectionWithRetryPrompt($hostToCheck)
 
-if ($connectionResult) { Write-Output "Successfully connected to $hostToCheck." }
-else { Write-Output "Failed to connect to $hostToCheck after retries." }
-#>
+# Test checking connection to SQL Server with hostname and port
+$serverName = "localhost"
+$port = 143
+
+#if ($connectionResult) { Write-Output "Successfully connected to $hostToCheck." }
+#else { Write-Output "Failed to connect to $hostToCheck after retries." }
+if ($networkChecker.CheckConnectionToHost($serverName, $port)) {
+    Write-Output "SQL Server on $serverName is available on port $port."
+} else {
+    Write-Output "SQL Server on $serverName is not available on port $port."
+}
+
+##>
