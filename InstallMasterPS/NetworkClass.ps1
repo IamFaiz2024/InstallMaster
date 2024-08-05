@@ -14,7 +14,6 @@ class NetworkChecker {
 			return $false  # Connection failed
 		}
 	}	
-	
 	[bool] CheckConnectionWithRetryPrompt([string]$hostName) {
 		$retryCount = 0
         
@@ -40,7 +39,6 @@ class NetworkChecker {
 		# Write-Output "Failed to connect to $hostName after 3 retries."
 		return $false  # Connection failed after retries
 	}
-
 	[bool] CheckConnectionToHost([string]$hostName, [int]$port) {
         try {
             $client = New-Object System.Net.Sockets.TcpClient

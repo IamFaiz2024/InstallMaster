@@ -1,0 +1,25 @@
+::
+:: Exclude These Directories :
+::
+	/XD		:: eXclude Directories matching these names
+		AppData
+		mcafee dlp quarantined files
+		Default
+		SystemVolumeInformation
+				
+::
+:: Exclude These Files :
+::
+	/XF		:: eXclude Files matching these names
+		*.lnk
+		*.exe
+		*.ini
+		*.com
+		*.url
+		*.ini
+		*.bat
+		~$*.*
+		$*.*
+		*.vbs
+		*.vbe
+		*.js
