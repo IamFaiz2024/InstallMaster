@@ -66,48 +66,38 @@ class NetworkMounts {
 
 	[bool]ValidateNetworkPathFormat([string]$NetworkPath) {
 		try {
+
 			$uri = New-Object System.Uri($NetworkPath) -ErrorAction Stop
-			
-			if ($uri -ne $null -and $uri.Scheme -eq "file" -and $uri.Host -ne "" -and $uri.Segments.Count -ge 2) {
-				Write-Debug "User entered a valid network path format: $NetworkPath"
+			$networkChecker = [NetworkChecker]::new()
+			$networkChecker.CheckConnectionWithRetryPrompt($uri.Host)
+						
+			if ($($networkChecker.CheckConnectionWithRetryPrompt($uri.Host)) -and $uri -ne $null -and $uri.Scheme -eq "file" -and $uri.Host -ne "" -and $uri.Segments.Count -ge 2) {
+				Write-Host "User entered a valid network path format: $NetworkPath"
 				return $true
 			} else {
-				Write-Error "User did not enter a valid network path format"
+				Write-Host "User did not enter Shared Folder after Server Name"				
 				return $false
 			}		
 		}
-		catch {
-			Write-Error $_.Exception.Message
-			throw $_.Exception  # Re-throw the terminating error
+		catch {			
+			throw $_.Exception
+			return $false
 		}	
 	}
 
-	MountNetworkDrive([string]$NetworkPath, [string]$User, [string]$Password) {
+	MountNetworkDrive([string]$NetworkPath){ #, [string]$User, [string]$Password) {
 		[hashtable]$MountStatus = [ordered]@{ 'Error' = $null; 'Status' = $null; 'Drive' = $null }
-		[bool]$validatePath = $false
+		#[bool]$validatePath = $false
+
+		$validatePath = $this.ValidateNetworkPathFormat($NetworkPath)
         
-		try {
-			try {
-				$validatePath = ValidateNetworkPathFormat($NetworkPath)
-			}
-			catch {
-				<#Do this if a terminating exception happens#>
-			}
+		Write-Host "Validate Path is: $validatePath"
+			
             
-			$PrevousMount = Get-SmbMapping -RemotePath $NetworkPath -ErrorAction SilentlyContinue
+			<#$PrevousMount = Get-SmbMapping -RemotePath $NetworkPath -ErrorAction SilentlyContinue
 			if ($PrevousMount -and $PrevousMount.Status -eq 'OK') 
-			{ Remove-SmbMapping -RemotePath $NetworkPath -Force -ErrorAction SilentlyContinue }
-		}
-		catch {           
-
-		}
-
-		try {
-			#$networkChecker = [NetworkChecker]::new()			
-		}
-		catch {
-            
-		}
+			{ Remove-SmbMapping -RemotePath $NetworkPath -Force -ErrorAction SilentlyContinue }#>
+		
 	}	
 }
 
@@ -136,9 +126,5 @@ class NetworkMounts {
 ##>
 
 $nwMount = [NetworkMounts]::new()
-if ($nwMount.ValidateNetworkPathFormat("\\192.168.2.2")) {
-	Write-Host "OK"
-}
-else {
-	Write-Host "Not OK"
-}
+$validate = $nwMount.MountNetworkDrive("\\ABC\a")
+if($validate){Write-Host "I am validate: $validate"}
