@@ -62,45 +62,83 @@ class NetworkChecker {
 	}
 }
 
-class NetworkMounts{
+class NetworkMounts {
 
 	[bool]ValidateNetworkPathFormat([string]$NetworkPath) {
 		try {
-			$uri = New-Object System.Uri($NetworkPath)
-			if ($uri.Scheme -eq "file" -and $uri.Host -ne "" -and $uri.Segments.Count -ge 2)
-			{ Write-Debug "User entered a valid network path format: $NetworkPath"; return $true }
-			else { Write-Debug "User did not enter a valid network path format"; return $false }		
+			$uri = New-Object System.Uri($NetworkPath) -ErrorAction Stop
+			
+			if ($uri -ne $null -and $uri.Scheme -eq "file" -and $uri.Host -ne "" -and $uri.Segments.Count -ge 2) {
+				Write-Debug "User entered a valid network path format: $NetworkPath"
+				return $true
+			} else {
+				Write-Error "User did not enter a valid network path format"
+				return $false
+			}		
 		}
-		catch
-		{ Write-Debug "Error validating network path: $_"; return $false }	
+		catch {
+			Write-Error $_.Exception.Message
+			throw $_.Exception  # Re-throw the terminating error
+		}	
 	}
 
-	[hashtable] MountNetworkDrive([string]$NetworkPath,[string]$User,[string]$Password,[string]$DriveLetter = '',[switch]$Disconnect) {
-		[hashtable]$Hasht=$null
-		return [hashtable]$Hasht
-	}
+	MountNetworkDrive([string]$NetworkPath, [string]$User, [string]$Password) {
+		[hashtable]$MountStatus = [ordered]@{ 'Error' = $null; 'Status' = $null; 'Drive' = $null }
+		[bool]$validatePath = $false
+        
+		try {
+			try {
+				$validatePath = ValidateNetworkPathFormat($NetworkPath)
+			}
+			catch {
+				<#Do this if a terminating exception happens#>
+			}
+            
+			$PrevousMount = Get-SmbMapping -RemotePath $NetworkPath -ErrorAction SilentlyContinue
+			if ($PrevousMount -and $PrevousMount.Status -eq 'OK') 
+			{ Remove-SmbMapping -RemotePath $NetworkPath -Force -ErrorAction SilentlyContinue }
+		}
+		catch {           
+
+		}
+
+		try {
+			#$networkChecker = [NetworkChecker]::new()			
+		}
+		catch {
+            
+		}
+	}	
 }
 
 
-	#<#
-	# Create an instance of the NetworkChecker class
-	$networkChecker = [NetworkChecker]::new()
+#<#
+# Create an instance of the NetworkChecker class
+#$networkChecker = [NetworkChecker]::new()
 
-	# Test connection with retry prompt
-	#$hostToCheck = "localhost"
-	#$connectionResult = $networkChecker.CheckConnectionWithRetryPrompt($hostToCheck)
+# Test connection with retry prompt
+#$hostToCheck = "localhost"
+#$connectionResult = $networkChecker.CheckConnectionWithRetryPrompt($hostToCheck)
 
-	# Test checking connection to SQL Server with hostname and port
-	$serverName = "localhost"
-	$port = 1433
+# Test checking connection to SQL Server with hostname and port
+#$serverName = "localhost"
+#$port = 1433
 
-	#if ($connectionResult) { Write-Output "Successfully connected to $hostToCheck." }
-	#else { Write-Output "Failed to connect to $hostToCheck after retries." }
-	if ($networkChecker.CheckConnectionToHost($serverName, $port)) {
-		Write-Output "SQL Server on $serverName is available on port $port."
-	}
-	else {
-		Write-Output "SQL Server on $serverName is not available on port $port."
-	}
+#if ($connectionResult) { Write-Output "Successfully connected to $hostToCheck." }
+#else { Write-Output "Failed to connect to $hostToCheck after retries." }
+#if ($networkChecker.CheckConnectionToHost($serverName, $port)) {
+#	Write-Output "SQL Server on $serverName is available on port $port."
+#}
+#else {
+#	Write-Output "SQL Server on $serverName is not available on port $port."
+#}
 
-	##>
+##>
+
+$nwMount = [NetworkMounts]::new()
+if ($nwMount.ValidateNetworkPathFormat("\\192.168.2.2")) {
+	Write-Host "OK"
+}
+else {
+	Write-Host "Not OK"
+}
