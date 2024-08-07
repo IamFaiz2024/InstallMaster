@@ -66,7 +66,6 @@ class NetworkMounts {
 
 	[bool]ValidateNetworkPathFormat([string]$NetworkPath) {
 		try {
-
 			$uri = New-Object System.Uri($NetworkPath) -ErrorAction Stop
 			$networkChecker = [NetworkChecker]::new()
 			$networkChecker.CheckConnectionWithRetryPrompt($uri.Host)
