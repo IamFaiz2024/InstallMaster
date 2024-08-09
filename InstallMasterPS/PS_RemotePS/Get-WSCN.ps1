@@ -113,6 +113,8 @@ PROCESS
 	}
 	$var_Parse_btn.Add_Click({
 			Write-Host "Processing"
+			
+			
 			#Write-Host $var_Comp_Details.Text
 			#$var_Comp_Details.Text
 <#			[array]$Arra1 = $null
@@ -121,11 +123,13 @@ PROCESS
 			#[array]$ParseTextBox1 = $ParseTextBox.Split(" ")
 			Write-Host $Arra1[0]
 			$$`#>
-			
-			$myTextBox = New-Object System.Windows.Controls.TextBox
+			$RequiredInfo = $var_Comp_Details.Text -split "`n"
+			Write-Host $RequiredInfo[3]
+			<#$myTextBox = New-Object System.Windows.Controls.TextBox
 			$myTextBox.Text = "$SerialNumber `r`n $MacAddress `r`n $ModelNumber `r`n"
-			Write-Host $myTextBox.Text
+			Write-Host $myTextBox.Text#>
 			
+			<#
 			exit
 			
 			$SerialNumber = $ParseTextBox[0]			
@@ -141,7 +145,7 @@ PROCESS
 			$TextFileConent = "$SerialNumber `r`n $MacAddress `r`n $ModelNumber `r`n"
 			$desktopPath = [Environment]::GetFolderPath('Desktop')
 			$configFilePath = Join-Path -Path $desktopPath -ChildPath "$SerialNumber.txt"
-			Set-Content -Path $configFilePath -Value $TextFileConent			
+			Set-Content -Path $configFilePath -Value $TextFileConent	#>		
 		})
 	
 	<#$var_Parse_btn.Add_Click({
