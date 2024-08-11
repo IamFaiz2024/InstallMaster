@@ -1,62 +1,16 @@
 ﻿BEGIN
 {
 	Add-Type -AssemblyName PresentationFramework #GUI Framework
+	Add-Type -AssemblyName Microsoft.VisualBasic #input box assembly
 	
-	[void][System.Reflection.Assembly]::LoadWithPartialName('Microsoft.VisualBasic') #input box assembly
-	
-	#$UserName = [Microsoft.VisualBasic.Interaction]::InputBox('Enter Tawasul User Name', 'User Name Input', 'U')
+	$UserName = [Microsoft.VisualBasic.Interaction]::InputBox('Enter Tawasul User Name', 'User Name Input', 'U')
 	
 	[string]$RequiredInfo = $null
 	[string]$SerialNumber = $null	
 	[string]$MacAddress = $null
 	[string]$ModelNumber = $null
 	
-	#region LF-InstallationGUI Declare and Initialization
-	$LFInstallationGuiPath = "$PSScriptRoot\LF-InstallationGUI.xaml"
-	
-	$LFInstallationGuiCnt = Get-Content $LFInstallationGuiPath -Raw
-	$LFInstallationGuiCnt = $LFInstallationGuiCnt -replace 'mc:Ignorable="d"', '' -replace "x:N", 'N' -replace '^<Win.*', '<Window'
-	[XML]$LFInstallationGuiXML = $LFInstallationGuiCnt
-	
-	$reader = (New-Object System.Xml.XmlNodeReader $LFInstallationGuiXML)
-	try
-	{
-		$LFInstallationGuiWindow = [Windows.Markup.XamlReader]::Load($reader)
-	}
-	catch
-	{
-		Write-Warning $_.Exception
-		throw
-	}
-	
-	$LFInstallationGuiXML.SelectNodes("//*[@Name]") | ForEach-Object {
-		#"trying item $($_.Name)"
-		try
-		{
-			Set-Variable -Name "var_$($_.Name)" -Value $LFInstallationGuiWindow.FindName($_.Name) -ErrorAction Stop
-		}
-		catch
-		{
-			throw
-		}
-	}
-	
-	Get-Variable var_*
-	
-	#Start-Job -Name 'LogWindow' { $Null = $LFInstallationGuiWindow.ShowDialog() }
-	#endregion LF-InstallationGUI Declare and Initialization
-	
-	#region MainFrm_OnLoad
-	$var_MainFrm.Add_Loaded({
-			$var_User_lbl.Content = $UserName #Setting Form Title as UserName
-			$var_CN_txt.Content = "W-ZMC-GRF-0000"
-		})
-	#endregion MainFrm_OnLoad
-	
-}
-PROCESS
-{
-	
+	#region Get-WSCN
 	function Get-WSCN
 	{
 		[CmdletBinding()]
@@ -111,27 +65,91 @@ PROCESS
 			return $ReturnDataTable
 		}
 	}
+	#endregion
+	
+	#region LF-InstallationGUI Declare and Initialization
+	$LFInstallationGuiPath = "$PSScriptRoot\LF-InstallationGUI.xaml"
+	
+	$LFInstallationGuiCnt = Get-Content $LFInstallationGuiPath -Raw
+	$LFInstallationGuiCnt = $LFInstallationGuiCnt -replace 'mc:Ignorable="d"', '' -replace "x:N", 'N' -replace '^<Win.*', '<Window'
+	[XML]$LFInstallationGuiXML = $LFInstallationGuiCnt
+	
+	$reader = (New-Object System.Xml.XmlNodeReader $LFInstallationGuiXML)
+	try
+	{
+		$LFInstallationGuiWindow = [Windows.Markup.XamlReader]::Load($reader)
+	}
+	catch
+	{
+		Write-Warning $_.Exception
+		throw
+	}
+	
+	$LFInstallationGuiXML.SelectNodes("//*[@Name]") | ForEach-Object {
+		#"trying item $($_.Name)"
+		try
+		{
+			Set-Variable -Name "var_$($_.Name)" -Value $LFInstallationGuiWindow.FindName($_.Name) -ErrorAction Stop
+		}
+		catch
+		{
+			throw
+		}
+	}
+	
+	Get-Variable var_*
+	
+	#Start-Job -Name 'LogWindow' { $Null = $LFInstallationGuiWindow.ShowDialog() }
+	#endregion LF-InstallationGUI Declare and Initialization
+	
+	#region ParseTextBox Function
+			<#
+	.SYNOPSIS
+		Get Required Work Station Information
+	
+	.DESCRIPTION
+		A detailed description of the Get-Wsinfo function.
+	
+	.PARAMETER TxtBoxCtrl
+		Target TextBox
+	
+	.EXAMPLE
+		PS C:\> Get-Wsinfo
+	
+	.NOTES
+		Additional information about the function.
+#>
+	function Get-Wsinfo
+	{
+		[CmdletBinding()]
+		param
+		(
+			[System.Windows.Controls.TextBox]$TxtBoxCtrl
+		)
+		
+		[string[]]$RequiredInfo = $TxtBoxCtrl.Text -split "`n"
+		return $RequiredInfo
+	}
+	
+	#endregion ParseTextBox Function
+	
+	#region MainFrm_OnLoad
+	$var_MainFrm.Add_Loaded({
+			$var_User_lbl.Content = $UserName #Setting Form Title as UserName
+			$var_CN_txt.Content = "W-ZMC-GRF-0000"
+		})
+	#endregion MainFrm_OnLoad
+	
+}
+PROCESS
+{
 	$var_Parse_btn.Add_Click({
 			Write-Host "Processing"
+			[string[]]$myList = Get-Wsinfo -TxtBoxCtrl $var_Comp_Details
 			
-			
-			#Write-Host $var_Comp_Details.Text
-			#$var_Comp_Details.Text
-<#			[array]$Arra1 = $null
-			$ParseTextBox = $($var_Comp_Details.Text) #$($var_Comp_Details.Text).Split([Environment]::NewLine)
-			$Arra1 = $ParseTextBox.Split(" ")
-			#[array]$ParseTextBox1 = $ParseTextBox.Split(" ")
-			Write-Host $Arra1[0]
-			$$`#>
-			$RequiredInfo = $var_Comp_Details.Text -split "`n"
-			Write-Host $RequiredInfo[3]
-			<#$myTextBox = New-Object System.Windows.Controls.TextBox
-			$myTextBox.Text = "$SerialNumber `r`n $MacAddress `r`n $ModelNumber `r`n"
-			Write-Host $myTextBox.Text#>
-			
-			<#
-			exit
-			
+			$Comp_Details | ForEach-Object { Write-Host $_ }
+						
+			<#			
 			$SerialNumber = $ParseTextBox[0]			
 			$MacAddress = $ParseTextBox[3]
 			$ModelNumber = $ParseTextBox[4]
@@ -141,7 +159,7 @@ PROCESS
 			Write-Host $ModelNumber
 			
 			$CN = Get-WSCN -SerialNumber $SerialNumber -MACAddress $MacAddress -Model $ModelNumber
-			$CN
+			
 			$TextFileConent = "$SerialNumber `r`n $MacAddress `r`n $ModelNumber `r`n"
 			$desktopPath = [Environment]::GetFolderPath('Desktop')
 			$configFilePath = Join-Path -Path $desktopPath -ChildPath "$SerialNumber.txt"
