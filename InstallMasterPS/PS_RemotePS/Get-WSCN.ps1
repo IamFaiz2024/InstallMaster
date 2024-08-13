@@ -6,7 +6,7 @@
 	$UserName = [Microsoft.VisualBasic.Interaction]::InputBox('Enter Tawasul User Name', 'User Name Input', 'U')
 	
 	[string]$RequiredInfo = $null
-	[string]$SerialNumber = $null	
+	[string]$SerialNumber = $null
 	[string]$MacAddress = $null
 	[string]$ModelNumber = $null
 	
@@ -135,8 +135,10 @@
 	
 	#region MainFrm_OnLoad
 	$var_MainFrm.Add_Loaded({
+			$varLblTmp = New-Object System.Windows.Controls.Label
+			$var_CN_txt.Visibility = 'Hidden'
 			$var_User_lbl.Content = $UserName #Setting Form Title as UserName
-			$var_CN_txt.Content = "W-ZMC-GRF-0000"
+			$var_CN_txt.Content = "W-ZMC-GRF-"
 		})
 	#endregion MainFrm_OnLoad
 	
@@ -145,33 +147,24 @@ PROCESS
 {
 	$var_Parse_btn.Add_Click({
 			Write-Host "Processing"
-			[string[]]$myList = Get-Wsinfo -TxtBoxCtrl $var_Comp_Details
+			[string[]]$Comp_Details = Get-Wsinfo -TxtBoxCtrl $var_Comp_Details
 			
-			$Comp_Details | ForEach-Object { Write-Host $_ }
-						
-			<#			
-			$SerialNumber = $ParseTextBox[0]			
-			$MacAddress = $ParseTextBox[3]
-			$ModelNumber = $ParseTextBox[4]
+			$SerialNumber = $Comp_Details[0].ToUpper()
+			$MacAddress = $Comp_Details[2].ToUpper()
+			$ModelNumber = $Comp_Details[3].ToUpper()
 			
-			Write-Host $SerialNumber
-			Write-Host $MacAddress
-			Write-Host $ModelNumber
+			Write-Host "User is: $UserName"
+			Write-Host "Serial Number is: $SerialNumber"
+			Write-Host "MACAddress is: $MacAddress"
+			Write-Host "Model Number is: $ModelNumber"
 			
-			$CN = Get-WSCN -SerialNumber $SerialNumber -MACAddress $MacAddress -Model $ModelNumber
 			
-			$TextFileConent = "$SerialNumber `r`n $MacAddress `r`n $ModelNumber `r`n"
-			$desktopPath = [Environment]::GetFolderPath('Desktop')
-			$configFilePath = Join-Path -Path $desktopPath -ChildPath "$SerialNumber.txt"
-			Set-Content -Path $configFilePath -Value $TextFileConent	#>		
+			#$CN = Get-WSCN -SerialNumber $SerialNumber -MACAddress $MacAddress -Model $ModelNumber
+			
+			$TextFileContent = "$SerialNumber$MacAddress$ModelNumber"
+			$configFilePath = "$PSScriptRoot\$($SerialNumber.Trim()).txt"
+			$TextFileContent | Out-File -FilePath $configFilePath -Append -Force -Verbose
 		})
-	
-	<#$var_Parse_btn.Add_Click({
-			
-			
-			
-			
-		})#>
 }
 
 END

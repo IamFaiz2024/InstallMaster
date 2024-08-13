@@ -15,7 +15,7 @@
       "RelativeMoniker": "D:0:0:{BFD11F3A-036C-4BD2-8EC5-A04014B219D8}|InstallMasterLib\\InstallMasterLib.csproj|solutionrelative:installmasterlib\\cpu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BFD11F3A-036C-4BD2-8EC5-A04014B219D8}|InstallMasterLib\\InstallMasterLib.csproj|d:\\w10user\\documents\\onlinerepositories\\installmaster\\installmasterlib\\storage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BFD11F3A-036C-4BD2-8EC5-A04014B219D8}|InstallMasterLib\\InstallMasterLib.csproj|D:\\W10User\\Documents\\OnlineRepositories\\InstallMaster\\installmasterlib\\storage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BFD11F3A-036C-4BD2-8EC5-A04014B219D8}|InstallMasterLib\\InstallMasterLib.csproj|solutionrelative:installmasterlib\\storage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -67,8 +67,7 @@
               "RelativeToolTip": "InstallMasterLib\\Storage.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAABIAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-01T07:11:13.819Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-01T07:11:13.819Z"
             },
             {
               "$type": "Document",
@@ -116,8 +115,7 @@
               "RelativeToolTip": "InstallMasterLib\\Device.cs",
               "ViewState": "AQIAAAkAAAAAAAAAAAAwwBAAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-01T06:31:48.285Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-01T06:31:48.285Z"
             },
             {
               "$type": "Document",
@@ -129,8 +127,7 @@
               "RelativeToolTip": "InstallMasterLib\\CPU.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAADcAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-01T05:32:10.517Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-01T05:32:10.517Z"
             }
           ]
         }

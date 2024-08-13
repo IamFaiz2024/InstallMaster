@@ -9,7 +9,7 @@
         ResizeMode="NoResize"
         Title="Remote Installation GUI Ver 1.0" Height="250" Width="450">
     <Grid x:Name="MainFrm">
-        <TextBox x:Name="Comp_Details" HorizontalAlignment="Left" Foreground="Blue" Margin="31,38,0,0" VerticalAlignment="Top" Width="240" FontWeight="Bold" FontSize="14" FontFamily="Arial Black" HorizontalContentAlignment="Center" Height="114" AcceptsReturn="True">
+        <TextBox x:Name="Comp_Details" HorizontalAlignment="Left" Foreground="Blue" Margin="31,38,0,0" VerticalAlignment="Top" Width="240" FontWeight="Bold" FontSize="14" FontFamily="Arial Black" HorizontalContentAlignment="Center" Height="114" AcceptsReturn="True" CharacterCasing="Upper">
 
         </TextBox>
         <Button x:Name="Parse_btn" Content="Get Name" HorizontalAlignment="Left" Margin="311,60,0,0" VerticalAlignment="Top" Width="100" FontWeight="Bold" FontSize="16" FontFamily="Arial Black" HorizontalContentAlignment="Center" Height="25" IsEnabled="True"/>
